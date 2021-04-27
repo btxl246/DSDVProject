@@ -87,10 +87,11 @@ function draw(){
         }
         fCount = fCount.sort();
 
+        console.log(fCount);    
         // set the dimensions and margins of the graph
-        var width = 500
-        height = 500
-        margin = 30
+        var width = 800
+        height = 800;
+        margin = 40;
 
         // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
         var radius = Math.min(width, height) / 2 - margin
@@ -103,6 +104,7 @@ function draw(){
         // append the svg object to the div called 'my_dataviz'
         var svg = d3.select("#visual")
         .append("svg")
+        
         .attr("width", width)
         .attr("height", height)
         .append("g")
@@ -125,32 +127,44 @@ function draw(){
         .attr("class", "tooltip")
         .style("opacity", 0);
 
+
+        var arcGen = d3.arc().innerRadius(200).outerRadius(radius)
         // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
         svg
         .selectAll("pie")
         .data(data_ready)
         .enter()
         .append("path")
-        .attr("d", d3.arc()
-        .innerRadius(100)
-        .outerRadius(radius)
-        )
+        .attr("d", arcGen)
         .attr("fill", function(d){ return(color(d.data.key)) })
         .attr("stroke", "white")
         .style("stroke-width", "3px")
         .style("opacity", 0.7)
             
         .on("mouseover", function (d){
-            d3.select(this).transition().duration(150).attr("d", d3.arc().innerRadius(100).outerRadius(radius + 30));
+            d3.select(this).transition().duration(150).attr("d", d3.arc().innerRadius(200).outerRadius(radius + 30));
             div.transition().duration(150).style("opacity",1);
             div.html(d.value)
             .style("left", d3.event.pageX + 10 + "px")
             .style("top", d3.event.pageY - 15 + "px");
         })
         .on("mouseout", function(d){
-            d3.select(this).transition().duration(150).attr("d", d3.arc().innerRadius(100).outerRadius(radius));
+            d3.select(this).transition().duration(150).attr("d", arcGen);
             div.transition().duration(150).style("opacity",0);
         });
+
+        svg.selectAll("pie")
+           .data(data_ready)
+           .enter()
+           .append('text')
+           .text(function(d){ return d.data.key})
+           .attr("transform", function(d) { 
+            return "translate(" + (arcGen.centroid(d)[0]) + "," + (arcGen.centroid(d)[1]) +  ")";  })
+           .style("text-anchor", "middle")
+           .style("font-size", 17)
+           .style("font-family", "Segoe-UI")
+           .style("font-style", "italic")
+           .style("fill","white");
     })
 }
 

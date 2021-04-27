@@ -10,7 +10,6 @@
 body {
   display: flex;
   justify-content: center;
-  align-items: left;
   flex-direction: column;
 }
 
@@ -50,6 +49,7 @@ div.tooltip {
   font-family: "Segoe UI";
   font-weight: bolder;
   border: 0px;
+  position: static;
   pointer-events: none;
   font-size: 20px;
 }

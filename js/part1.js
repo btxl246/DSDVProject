@@ -1,6 +1,6 @@
 var margin = {top: 20, right: 30, bottom: 50, left: 50},
-    width = 6000 - margin.left - margin.right,
-    height = 2200 - margin.top - margin.bottom;
+    width = 2700 - margin.left - margin.right,
+    height = 1300 - margin.top - margin.bottom;
 
 // setup x 
 var xValue = function(d) { return d.year;}, // data -> value
@@ -32,6 +32,8 @@ var chart = svg.append("g")
 var tooltip = d3.select("body").append("div")
     .attr("class", "tooltip")
      
+/*var parseDate = d3.time.format("%Y").parse;
+var dateFormat = d3.time.format("%Y");*/
 var rowConverter = function(d) {
                 return { 
                   year: parseInt(d.year_ceremony),
@@ -99,7 +101,7 @@ yScale.domain([0, 185]);
       .data(data)
       .enter().append("circle")
       .attr("class", "dot")
-      .attr("r", 6)
+      .attr("r", 3)
       .attr("cx", xMap)
       .attr("cy", yMap)
       .style("fill", function(d) { return color(cValue(d));}) 
@@ -109,7 +111,7 @@ yScale.domain([0, 185]);
       .style("text-anchor", "end")
       .style("opacity", 100);
     
-          tooltip.html("Information: " + "<br/> +Film: "+ d.film + "<br/> +Production year:" + d.year_film + "<br/> +"+d.ctg +": " + d.name + "<br/> +Win: " +d.win)
+          tooltip.html("Information: " + "<br/> +Film: "+ d.film + "<br/> +Production year:" + d.year_film + "<br/> +"+d.ctg +": " + d.name + "<br/> +Win/Lost: " +d.win)
                .style("left", (d3.event.pageX + 25) + "px")
                .style("top", (d3.event.pageY - 28) + "px");
       })

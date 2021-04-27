@@ -106,10 +106,15 @@ yScale.domain([0, 185]);
       .attr("cy", yMap)
       .style("fill", function(d) { return color(cValue(d));}) 
       .on("mouseover", function(d) {
+        
           tooltip.transition()
       .duration(200)
+       
       .style("text-anchor", "end")
-      .style("opacity", 100);
+      .style("opacity", 100) 
+        d3.select(this).attr({
+              fill: "orange",
+              r:  10});
     
           tooltip.html("Information: " + "<br/> +Film: "+ d.film + "<br/> +Production year:" + d.year_film + "<br/> +"+d.ctg +": " + d.name + "<br/> +Win/Lost: " +d.win)
                .style("left", (d3.event.pageX + 25) + "px")
@@ -118,9 +123,16 @@ yScale.domain([0, 185]);
       .on("mouseout", function(d) {
           tooltip.transition()
                .duration(500)
-               .style("opacity", 0);
+               .style("opacity", 0)
+        d3.select(this).attr({
+              fill: "black",
+              r: 3
+            });
+        
       });
+      
 
   
+      
       }
 });

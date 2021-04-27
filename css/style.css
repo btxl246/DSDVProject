@@ -1,0 +1,55 @@
+#searchbar {
+  width: 500px;
+  align-self: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+}
+
+#searchBut {
+  margin-left: 13px;
+  font-family: "Segoe UI";
+  border-radius: 4px;
+  border-width: 1px;
+}
+.button:hover {
+  color: white;
+  background-color: #3a8182;
+}
+
+#yearSel {
+  text-align: center;
+  display: block;
+  width: max-content;
+  font-family: "Segoe UI";
+}
+
+#yearSelLb {
+  padding-right: 5px;
+  font-family: "Segoe UI";
+}
+#visual {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  align-self: center;
+}
+div.tooltip {
+  width: fit-content;
+  text-align: center;
+  align-self: center;
+  color: black;
+  font-family: "Segoe UI";
+  font-weight: bolder;
+  border: 0px;
+  pointer-events: none;
+  font-size: 20px;
+}

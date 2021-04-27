@@ -14,7 +14,7 @@ body {
 }
 
 .dot {
-  stroke: #F5CCD4;
+  stroke: none;
 }
 
 .tooltip {

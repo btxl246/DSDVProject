@@ -36,7 +36,7 @@ function createForm(data){
 
 function getYearlist(){
     var yearList = Array();
-    d3.csv("./data.csv", function (data) {
+    d3.csv("https://raw.githubusercontent.com/Pdq1227/Data_DSDV/main/data.csv", function (data) {
         for(var i=0;i<data.length;i++){
             if(i==0){
                 yearList.push(data[i]['year_ceremony']);
@@ -69,7 +69,7 @@ function onlyUnique(value, index, self) {
 
 function draw(){
     sel_year = document.getElementById("yearSel").value;
-    d3.csv("./data.csv", function(data){
+    d3.csv("https://raw.githubusercontent.com/Pdq1227/Data_DSDV/main/data.csv", function(data){
         data_filtered = data.filter(function (d){return ((d['year_ceremony'] == sel_year) && (d['winner'] == "TRUE"));});
         fName = Array();
         fCount = Array();

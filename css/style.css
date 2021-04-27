@@ -3,14 +3,30 @@ body {
   background: ;
   color: #EB6997 ;
   text-align: left;
+  font: 10px sans-serif;
 }
-#name {
-  font-family: time new roman;
-  color: #EA5284;
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #15252b;
+  shape-rendering: crispEdges;
 }
-.btext { 
-  font-weight: bold;
+
+.dot {
+  stroke: #F5CCD4;
 }
-#qu {
-  font-style: italic;
+
+.tooltip {
+  position: absolute;
+  width: 1F70px;
+  height: 3F8px;
+  pointer-events: none;
+  background: white;
+  position: absolute;			
+  border: solid;		
+  border-radius: 5px;	
+  padding: 5px;
+  font: 15px sans-serif;
+ 
 }

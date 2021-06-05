@@ -14,13 +14,11 @@ body {
 }
 
 .dot {
-  stroke: none;
+  stroke: "lightgrey";
 }
 
 .tooltip {
   position: absolute;
-  width: 1F70px;
-  height: 3F8px;
   pointer-events: none;
   background: white;
   position: absolute;			

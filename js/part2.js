@@ -35,6 +35,41 @@ function createForm(data) {
   div.appendChild(but);
 }
 
+function wrap(text, width) {
+  text.each(function () {
+    var text = d3.select(this),
+      words = text.text().split(/\s+/).reverse(),
+      word,
+      line = [],
+      lineNum = 0,
+      y = text.attr("y"),
+      dy = parseFloat(text.attr("dy"));
+
+    tspan = text
+      .text(null)
+      .append("tspan")
+      .attr("x", 0)
+      .attr("y", y)
+      .attr("dy", dy + "em");
+    while ((word = words.pop())) {
+      line.push(word);
+      tspan.text(line.join(" "));
+      if (tspan.node().getComputedTextLength() > width) {
+        line.pop();
+        tspan.text(line.join(" "));
+        line = [word];
+        //lineNum++;
+        tspan = text
+          .append("tspan")
+          .attr("x", 0)
+          .attr("y", y)
+          .attr("dy", ++lineNum * dy + dy + "em")
+          .text(word);
+      }
+    }
+  });
+}
+
 function getYearlist() {
   var yearList = Array();
   d3.csv(
@@ -166,7 +201,7 @@ function drawChart() {
       var height = 900;
       var margin = 20;
 
-      var radius = Math.min(900, 900) / 2 - margin;
+      var radius = Math.min(800, 800) / 2 - margin;
       //console.log(radius);
 
       // Setting up color scheme
@@ -231,9 +266,9 @@ function drawChart() {
         .attr("cx", 0)
         .attr("cy", 0)
         .attr("r", 45)
-        .attr("stroke", "black")
+        .attr("stroke", "#ffffff")
         .attr("stroke-width", "2px")
-        .attr("fill", "#ffffff00");
+        .attr("fill", "#black");
 
       svg
         .append("text")
@@ -245,7 +280,7 @@ function drawChart() {
         .style("font-family", "Segoe-UI")
         .style("font-size", "20px")
         .style("font-weight", "bold")
-        .attr("fill", "black");
+        .attr("fill", "white");
 
       // Arc 1: Category
       var arcGen = d3.arc().innerRadius(60).outerRadius(61);
@@ -256,8 +291,8 @@ function drawChart() {
         .enter()
         .append("path")
         .attr("d", arcGen)
-        .attr("fill", "#ffffff00")
-        .attr("stroke", "white")
+        .attr("fill", "black")
+        .attr("stroke", "black")
         .style("stroke-width", "4px")
         .style("opacity", 0.7);
 
@@ -307,12 +342,12 @@ function drawChart() {
         .enter()
         .append("path")
         .attr("d", arcGen2)
-        .attr("fill", "#ffffff00")
-        .attr("stroke", "black")
+        .attr("fill", "#00000000")
+        .attr("stroke", "white")
         .style("stroke-opacity", 0.5)
-        .style("stroke-dasharray", "3 6 3 6")
+        .style("stroke-dasharray", "5 10 5 10")
         .style("stroke-width", "2px")
-        .style("opacity", 0.5);
+        .style("opacity", 0.7);
 
       // Arc 2: Winner's name
       var arcGen3 = d3.arc().innerRadius(293).outerRadius(300);
@@ -326,11 +361,11 @@ function drawChart() {
         .attr("fill", function (d) {
           return color(d.data.value[0]);
         })
-        .attr("stroke", "white")
+        .attr("stroke", "black")
         .style("stroke-width", "4px")
         .style("opacity", 1);
 
-      var arcGen4 = d3.arc().innerRadius(305).outerRadius(390);
+      var arcGen4 = d3.arc().innerRadius(305).outerRadius(380);
 
       svg
         .selectAll("pie")
@@ -338,16 +373,18 @@ function drawChart() {
         .enter()
         .append("path")
         .attr("d", arcGen4)
-        .attr("fill", "#ffffff00")
-        .attr("stroke", "#ffffff00")
+        .attr("fill", "black")
+        .attr("stroke", "black")
         .style("stroke-width", "3px")
-        .style("opacity", 0.7);
+        .style("opacity", 0);
 
       svg
         .selectAll("pie")
         .data(data_1)
         .enter()
         .append("text")
+        .attr("y", "-2em")
+        .attr("dy", "1em")
         .text(function (d) {
           return d.data.value[2];
         })
@@ -367,17 +404,15 @@ function drawChart() {
           );
         })
         .style("text-anchor", "middle")
-        /*function (d) {
-          return d.endAngle - Math.PI <= 1e-10 ? "start" : "end";
-        })*/
         .style("font-size", 15)
         .style("font-family", "Segoe-UI")
         .attr("fill", function (d) {
           return color(d.data.value[0]);
-        });
+        })
+        .call(wrap, 20);
 
       // Arc 3: Film name
-      var arcGen5 = d3.arc().innerRadius(410).outerRadius(420);
+      var arcGen5 = d3.arc().innerRadius(400).outerRadius(410);
       svg
         .selectAll("pie")
         .data(data_2)
@@ -386,12 +421,12 @@ function drawChart() {
         .attr("d", arcGen5)
         .attr("fill", function (d) {
           if (d.data.value[0] == "") {
-            return "#ffffff00";
+            return "black";
           } else {
             return color(d.data.value[0]);
           }
         })
-        .attr("stroke", "white")
+        .attr("stroke", "black")
         .style("stroke-width", "6px")
         .style("opacity", function (d) {
           if (d.data.value[0] == "") {
@@ -404,7 +439,7 @@ function drawChart() {
       var arcGen6 = d3
         .arc()
         .innerRadius(418)
-        .outerRadius(radius + 20);
+        .outerRadius(radius + 40);
       svg
         .selectAll("pie")
         .data(data_2)
@@ -414,7 +449,7 @@ function drawChart() {
         .attr("fill", "#ffffff00")
         .attr("stroke", "#ffffff00")
         .style("stroke-width", "3px")
-        .style("opacity", 0.7);
+        .style("opacity", 0);
 
       svg
         .selectAll("pie")
@@ -422,7 +457,11 @@ function drawChart() {
         .enter()
         .append("text")
         .text(function (d) {
-          return d.data.value[0];
+          if (d.data.key == "") {
+            return "";
+          } else {
+            return d.data.value[0] + " (" + d.value + ")";
+          }
         })
         .attr("transform", function (d) {
           let rotation =
@@ -440,26 +479,46 @@ function drawChart() {
           );
         })
         .style("text-anchor", function (d) {
-          return d.endAngle > Math.PI
-            ? Math.abs((d.startAngle + d.endAngle) / 2 - Math.PI) <= 1e-10
-              ? "middle"
-              : "end"
-            : "start";
+          var midAngle = (d.startAngle + d.endAngle) / 2;
+          if (midAngle - Math.PI > 0) {
+            return "end";
+          } else if (Math.abs(midAngle - Math.PI) <= 1e-12) {
+            return "middle";
+          } else {
+            return "start";
+          }
         })
         .style("font-size", 15)
+
         .style("font-weight", "bold")
         .style("font-family", "Segoe-UI")
         .attr("fill", function (d) {
-          if (d.data.key == "") {
-            return "#ffffff00";
+          if (d.data.value[0] == "") {
+            return "black";
           } else {
             return color(d.data.value[0]);
           }
         });
+
+      var arcGen7 = d3.arc().innerRadius(297).outerRadius(405);
+      svg
+        .selectAll("pie")
+        .data(data_2)
+        .enter()
+        .append("path")
+        .attr("d", arcGen7)
+        .attr("fill", "#00000000")
+        .attr("stroke", function (d) {
+          if (d.data.value[0] == "") {
+            return "#00000000";
+          } else {
+            return color(d.data.value[0]);
+          }
+        })
+        .style("stroke-opacity", 0.5)
+        .style("stroke-dasharray", "5 10 5 10")
+        .style("stroke-width", "2px")
+        .style("opacity", 0.7);
     }
   );
 }
-
-/*
-
-*/

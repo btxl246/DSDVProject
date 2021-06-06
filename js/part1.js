@@ -31,7 +31,7 @@ var tooltip = d3.select("body").append("div")
 // setup fill color
 var cValue = function(d) { return d.PID;},
     color =   d3.scaleOrdinal() //96 HANG MUC
-    .domain(["AFF","AR","ARSR","ARLR","AS","ASSR","ASLR", "AD","ADBW","ADC","ASD","BMP","BP","C","CBW","CCL","CD","CDBW","CDCL","D","DD","DCM","DCMF","DCP","DCMSS","DDP","EE","FE","FLF","IFF","MOS","MOSG","MS","MSC","MSDP","MSDCP","MSMP","MS","MSSO","MSMA","MOMS","MSOP","MOSMP","MSMPO","MODS","MSAOSS","MSOSA","MOSS","MOSSA","MOSSAS","MOMCS","MAS","MU","MUH","OMP","OP","OPT","PDD","S","SSC","SSCT","SSCM","SSO","SST","SSN","SSLA","SR","SE","SEE","SVE","SEF","SED","SM","SFDLA","SFLA","SFA","UAP","VE","W","WA","WMPS","WTW","WOS","WOSP","WOMPS","WSP","WSSP","WSPBM","WSSPDS","WSSPNP","WSSBFM","WASP","WSPAOM","WSPDSBF","WSPDS","WSPBMP"])
+    .domain(["AFF","AR","ARSR","ARLR","AS","ASSR","ASLR", "AD","ADBW","ADC","ASD","BMP","BP","C","CBW","CCL","CD","CDBW","CDCL","D","DD","DCM","DCMF","DCP","DCMSS","DDP","EE","FE","FLF","IFF","MOS","MOSG","MS","MSC","MSDP","MSDCP","MSMP","MSSO","MSMA","MOMS","MSOP","MOSMP","MSMPO","MODS","MSAOSS","MSOSA","MOSS","MOSSA","MOSSAS","MOMCS","MAS","MU","MUH","OMP","OP","OPT","PDD","S","SSC","SSCT","SSCM","SSO","SST","SSN","SSLA","SR","SE","SEE","SVE","SEF","SED","SM","SFDLA","SFLA","SFA","UAP","VE","W","WA","WMPS","WTW","WOS","WOSP","WOMPS","WSP","WSSP","WSPBM","WSSPDS","WSSPNP","WSSBFM","WASP","WSPAOM","WSPDSBF","WSPDS","WSPBMP"])
     .range(["#0048BA","#7CB9E8","#E52B50","#B284BE","#72A0C1","#EDEAE0","#C0E8D5","#B0BF1A","#C46210","#EFDECD",
 	    "#9F2B68","#F19CBB","#D3212D","#3B7A57","#FFBF00","#FF7E00","#EFBBCC","#A4C639","#CD9575","#665D1E",
 	    "#915C83","#841B2D","#FAEBD7","#008000","#8DB600","#FBCEB1","#00FFFF","#D0FF14","#4B5320","#7FFFD4",
@@ -171,7 +171,8 @@ d3.csv("https://raw.githubusercontent.com/ITDSIU19008/oscars_data/main/oscars_da
    // Add one dot in the legend for each name. 
         
         var size = 450
-        var allgroups = ["AFF","AR","ARSR","ARLR","AS","ASSR","ASLR", "AD","ADBW","ADC","ASD","BMP","BP","C","CBW","CCL","CD","CDBW","CDCL","D","DD","DCM","DCMF","DCP","DCMSS","DDP","EE","FE","FLF","IFF","MOS","MOSG","MS","MSC","MSDP","MSDCP","MSMP","MS","MSSO","MSMA","MOMS","MSOP","MOSMP","MSMPO","MODS","MSAOSS","MSOSA","MOSS","MOSSA","MOSSAS","MOMCS","MAS","MU","MUH","OMP","OP","OPT","PDD","S","SSC","SSCT","SSCM","SSO","SST","SSN","SSLA","SR","SE","SEE","SVE","SEF","SED","SM","SFDLA","SFLA","SFA","UAP","VE","W","WA","WMPS","WTW","WOS","WOSP","WOMPS","WSP","WSSP","WSPBM","WSSPDS","WSSPNP","WSSBFM","WASP","WSPAOM","WSPDSBF","WSPDS","WSPBMP"]
+         var size = 450
+        var allgroups = ["AFF","AR","ARSR","ARLR","AS","ASSR","ASLR", "AD","ADBW","ADC","ASD","BMP","BP","C","CBW","CCL","CD","CDBW","CDCL","D","DD","DCM","DCMF","DCP","DCMSS","DDP","EE","FE","FLF","IFF","MOS","MOSG","MS","MSC","MSDP","MSDCP","MSMP","MSSO","MSMA","MOMS","MSOP","MOSMP","MSMPO","MODS","MSAOSS","MSOSA","MOSS","MOSSA","MOSSAS","MOMCS","MAS","MU","MUH","OMP","OP","OPT","PDD","S","SSC","SSCT","SSCM","SSO","SST","SSN","SSLA","SR","SE","SEE","SVE","SEF","SED","SM","SFDLA","SFLA","SFA","UAP","VE","W","WA","WMPS","WTW","WOS","WOSP","WOMPS","WSP","WSSP","WSPBM","WSSPDS","WSSPNP","WSSBFM","WASP","WSPAOM","WSPDSBF","WSPDS","WSPBMP"]
         var allnames =["ANIMATED FEATURE FILM",
                        "ACTOR",
                        "ACTOR IN A SUPPORTING ROLE",
@@ -194,7 +195,8 @@ d3.csv("https://raw.githubusercontent.com/ITDSIU19008/oscars_data/main/oscars_da
                        "DOCUMENTARY (Feature)",
                        "DIRECTING (Comedy Picture)",
                        "DOCUMENTARY (Short Subject)",
-                       "DDP","ENGINEERING EFFECTS",
+                       "DIRECTING (Dramatic Picture)",
+                       "ENGINEERING EFFECTS",
                        "FILM EDITING",
                        "FOREIGN LANGUAGE FILM",
                        "INTERNATIONAL FEATURE FILM",
@@ -205,7 +207,6 @@ d3.csv("https://raw.githubusercontent.com/ITDSIU19008/oscars_data/main/oscars_da
                        "MUSIC (Music Score of a Dramatic Picture)",
                        "MUSIC (Music Score of a Dramatic or Comedy Picture)",
                        "MUSIC (Scoring of a Musical Picture)",
-                       "MS",
                        "MUSIC (Music Score--substantially original)",
                        "MUSIC (Scoring of Music--adaptation or treatment)",
                        "MUSIC (Original Music Score)",

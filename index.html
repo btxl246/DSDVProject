@@ -2,26 +2,464 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lab 5</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>DSDVProject</title>
     <script src="d3/d3_v4_13.js"></script>
-    <script src="d3/d3-scale-chromatic.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="part1"></div>
+    <script>
+        let rowConverter = function (d) {
+            return {
+                year_film: parseInt(d.year_film),
+                year_ceremony: parseInt(d.year_ceremony),
+                cere_num: parseInt(d.ceremony),
+                cat_id: d.category_id,
+                category: d.category,
+                name: d.name,
+                film: d.film,
+                win: d.winner,
+                count: parseInt(d.count)
+            };
+        }
 
-    <div id="part2"></div>
+        let margin = {top: 20, right: 300, bottom: 60, left: 30},
+            width = 1240,
+            height = 640;
 
-    <div id="part3"></div>
+        // Bottom layer
+        let svg = d3.select("body")
+            .append("div")
+                .append("svg")
+                    .attr("class", "bottom")
+                    .style("width", width)
+                    .style("height", height)
+                    .style("background-color", "#F5F5F5");
 
-    <div id="part4"></div>
+        let exitSize = 40, overlayMargin = {top: 5, right: 290, bottom: 5, left: 5};
 
-    <script src="js/part1.js"></script>
+        // Top layer
+        let overlay = d3.select("body")
+            .append("div")
+                .attr("class", "bottom top")
+                .style("width", width - overlayMargin.left - overlayMargin.right)
+                .style("height", height - overlayMargin.top - overlayMargin.bottom)
+                .style("background-color", "yellow")
+                .style("display", "none");
 
-    <script src="js/part2.js"></script>
+        let exitButton = overlay.append("svg")
+            .attr("width", exitSize)
+            .attr("height", exitSize)
+            .attr("transform", "translate(" + (width - overlayMargin.left - overlayMargin.right - 10 - exitSize) + ", 10)");
 
-    <script src="js/part3.js"></script>
+        exitButton.append("rect")
+            .attr("class", "exit").attr("fill", "red").attr("width", exitSize).attr("height", exitSize);
+        exitButton.append("line")
+            .attr("class", "exit").attr("stroke", "black").attr("stroke-width", 5).attr("stroke-linecap", "round")
+            .attr("x1", 0).attr("y1", 0).attr("x2", exitSize).attr("y2", exitSize);
+        exitButton.append("line")
+            .attr("class", "exit").attr("stroke", "black").attr("stroke-width", 5).attr("stroke-linecap", "round")
+            .attr("x1", 0).attr("y1", exitSize).attr("x2", exitSize).attr("y2", 0);
+        exitButton.on("click", showOverlay);
 
-    <script src="js/part4.js"></script>
+        let innerOverlay = overlay.append("div")
+                .attr("class", "inner");
+        let categoryLabel = innerOverlay.append("text")
+                .attr("id", "categoryLabel");
+
+        innerOverlay.append("p");
+
+        innerOverlay.append("label")    // Label for combo box
+            .attr("id", "filter")
+            .attr("for", "filterCB")
+            .text("About the: ");
+
+        let filterList = ["Film", "Winner"];
+        let filter = innerOverlay.append("select")  // Combo box
+            .attr("name", "filterCB")
+            .attr("id", "filterCB")
+            .on("change", filterChange);
+        filter.selectAll("option")
+            .data(filterList)
+            .enter()
+            .append("option")
+            .text(function (d) { return d; });
+
+        innerOverlay.append("p");
+
+        let innerChart = innerOverlay.append("div") // Chart from filter
+            .attr("id", "innerChart");
+
+        let currentDot, dataset;
+        function filterChange() {
+            // Remove previously added elements
+            let element = document.getElementById("innerChart");
+            while (element.firstChild) {
+                element.removeChild(element.firstChild);
+            }
+
+            let criterion = d3.select("select").property("value");
+            console.log(criterion);
+
+            let year = currentDot.year_ceremony,
+                cid = currentDot.cat_id,
+                category = currentDot.category,
+                name = currentDot.name,
+                film = currentDot.film,
+                win = currentDot.win,
+                noms = [];  // year, name, film, win
+
+            for (let i = 0; i < dataset.length; i++) {
+                if (dataset[i].cat_id === cid) {
+                    noms.push({year: dataset[i].year_ceremony, name: dataset[i].name, film: dataset[i].film, win: dataset[i].win});
+                }
+            }
+            console.log(noms);
+
+            updateOverlay(criterion);
+        }
+
+        let showBoolean = false;
+        function showOverlay(d) {
+            currentDot = d;
+            showBoolean = showBoolean !== true; // Switch to opposite boolean
+            if (showBoolean === true) {
+                categoryLabel.text("Viewing Category: " + d.category);
+                overlay.style("display", "block");  // Show
+            }
+            else {
+                overlay.style("display", "none");   // Hide
+            }
+        }
+
+        function updateOverlay(d) {
+            if (d === filterList[0]) {  // Film
+                innerChart.append("svg")
+                    .style("background-color", "blue");
+            }
+            else if (d === filterList[1]) { // Winner
+                innerChart.append("svg")
+                    .style("background-color", "green");
+            }
+        }
+
+        let chart = svg.append("g")
+            .attr("id", "dotChart");
+
+        let tooltip = d3.select("body") // Tooltip for dot
+                .append("div")
+                    .attr("class", "tooltip")
+                    .style("display", "none"),
+            legendTooltip = d3.select("body")   // Tooltip for legend
+                .append("div")
+                    .attr("class", "tooltip")
+                    .attr("id", "legendTooltip")
+                    .style("display", "none");
+
+        d3.csv("data/oscars_data.csv", rowConverter, function (error, data) {
+            if (error) {
+                console.log(error);
+            } else {
+                console.log(data);
+                dataset = data;
+
+                let allIDs = [];
+                let allCategories = [];
+                let allColors = [
+                    "#f47890", "#f40776", "#b30030", "#e60025",
+                    "#f3663c", "#fb97aa", "#ff0036", "#a5001b",
+                    "#bb0e59",
+
+                    "#ff83aa", "#ff7d6d", "#c90d16", "#bc0019",
+                    "#ff9e83", "#b33c3f", "#ffa346", "#ff6842",
+                    "#fb8d65",
+
+                    "#ff4900", "#ffd471", "#7e0104", "#e26000",
+                    "#bc5900", "#e98600", "#a00035", "#dbb470",
+                    "#ff9961",
+
+                    "#f8e8af", "#746100", "#b7a500", "#d8cd00",
+                    "#7b8400", "#aecc00", "#cfff69", "#85cd00",
+                    "#deffad",
+
+                    "#477e00", "#8bf31f", "#832e00", "#9fff4c",
+                    "#c6ff92", "#92b974", "#43a800", "#47c500",
+                    "#2fd519",
+
+                    "#85ff70", "#019125", "#37fd5a", "#4a8951",
+                    "#01c554", "#01984a", "#005f2c", "#6fff9e",
+                    "#01cc8a",
+
+                    "#6cffc3", "#89acff", "#004cc4", "#018ffc",
+                    "#0157b0", "#5c75ff", "#0f3782", "#0252f1",
+                    "#8f87ff",
+
+                    "#1f27a4", "#8670f9", "#cdaafe", "#4902b9",
+                    "#71508f", "#c687ff", "#523977", "#bd6bff",
+                    "#710099",
+
+                    "#e070ff", "#621578", "#e833e8", "#b012d4",
+                    "#d095d5", "#f785ff", "#a200a6", "#ff72f0",
+                    "#ff94f1",
+
+                    "#d3779b", "#73006a", "#aa1874", "#a20088",
+                    "#ff4dc9", "#ff68cc", "#e107b1", "#d47eab",
+                    "#fd00a8",
+
+                    "#ffb5cd","#870064", "#be007b", "#ff7bbd",
+                    "#ac5780", "#ff34a6", "#ff5b9d", "#d837c9"];
+
+                let tempCat = []
+                for (let i = 0; i < data.length; i++) {
+                    if (!allIDs.includes(data[i].cat_id)) {
+                        allIDs.push(data[i].cat_id);
+                        allCategories.push(data[i].category);
+                        tempCat.push({id: data[i].cat_id, name: data[i].category});
+                    }
+                }
+
+                function compare(a, b) {
+                    // Use toUpperCase() to ignore character casing
+                    const bandA = a.name.toUpperCase();
+                    const bandB = b.name.toUpperCase();
+
+                    let comparison = 0;
+                    if (bandA > bandB) {
+                        comparison = 1;
+                    } else if (bandA < bandB) {
+                        comparison = -1;
+                    }
+                    return comparison;
+                }
+
+                tempCat.sort(compare);
+                allIDs = [];
+                allCategories = [];
+                for (let i = 0; i < tempCat.length; i++) {
+                    allIDs.push(tempCat[i].id);
+                    allCategories.push(tempCat[i].name);
+                }
+
+                console.log(allIDs);
+                console.log(allCategories);
+
+                let colorScale = d3.scaleOrdinal()
+                    .domain(allIDs)
+                    .range(allColors);
+
+                let minYear = d3.min(data, function (d) { return d.year_ceremony; }),
+                    maxYear = d3.max(data, function (d) { return d.year_ceremony; }),
+                    tickLabels = [];
+                for (let i = minYear; i <= maxYear; i++)
+                    tickLabels.push(i);
+
+                let xScale = d3.scaleLinear().domain([minYear, maxYear]).range([margin.left, width - margin.right]),
+                    xMap = function (d) { return xScale(d.year_ceremony);},
+                    xAxis = d3.axisBottom()
+                        .scale(xScale)
+                        .tickFormat(d3.format("04d"))
+                        .ticks(15);
+
+                let yValue = function (d) { return + (d.count);}, // data -> value
+                    yScale = d3.scaleLinear().domain([0, 180]).range([height - margin.bottom, margin.top]),
+                    yMap = function (d) { return yScale(yValue(d));};
+
+                // Add the X Axis
+                chart.append("g")
+                        .attr("class", "x axis")
+                        .attr("transform", "translate(0, " + (height - margin.bottom) + ")")
+                        .call(xAxis)
+                        .selectAll("text")
+                            .attr("class", "label")
+                            .style("text-anchor", "end")
+                            .attr("dx", "-.8em")
+                            .attr("dy", ".15em")
+                            .style("font-size", "12px")
+                            .attr("transform", "rotate(-55)");
+
+                chart.append("text")
+                        .attr("class", "title")
+                        .text("Nomination")
+                        .attr("transform", "rotate(-90)")
+                        .style("font-size", "15px")
+                        .attr("x", -height/2)
+                        .attr("y", margin.left - 10);
+
+                chart.append("text")
+                        .attr("class", "title")
+                        .text("Ceremony Year")
+                        .style("font-size", "15px")
+                        .attr("x", width/2)
+                        .attr("y", height - 5);
+
+                let rNormal = 4, rHL = 10, rNoHL = 2;
+
+                let dots = chart.selectAll(".dot")
+                    .data(data)
+                    .enter()
+                    .append("circle")
+                        .attr("r", rNormal)
+                        .attr("class", function (d) {
+                            return "dot " + d.cat_id  + " " + d.win;
+                        })
+                        .attr("cx", xMap)
+                        .attr("cy", yMap)
+                        .style("fill", function (d) {
+                            return colorScale(d.cat_id);
+                        })
+                        .on("click", dotClick)
+                        .on("mouseover", dotOver)
+                        .on("mouseleave", dotLeave)
+                        .on("mousemove", dotMove)
+                        .on("mouseout", dotOut);
+
+                // Add one dot in the legend for each name.
+                let horizontalSpacing = 30, verticalSpacing = 15;
+                let legendGroup = svg.append("g")
+                    .attr("id", "legendGroup")
+                    .attr("transform", "translate(0, 50)");
+
+                let legend = legendGroup.selectAll(".legend")
+                    .data(allIDs)
+                    .enter()
+                    .append("g")
+                        .attr("class", "legend")
+                        .attr("transform", function (d, i) {
+                            return "translate(" + (width*3.15/4 + i%9*horizontalSpacing) + ", "
+                                + (Math.floor(i/9)*verticalSpacing - 35) + ")";
+                        })
+                        .append("rect")
+                            .attr("class", "legendRect")
+                            .attr("width", 12)
+                            .attr("height", 12)
+                            .style("stroke", "black")
+                            .style("stroke-width", 0.5)
+                            .style("fill", function (d) { return colorScale(d);})
+                            .on("click", legendClick)
+                            .on("mouseover", legendOver)
+                            .on("mouseleave", legendLeave)
+                            .on("mousemove", legendMove)
+                            .on("mouseout", legendOut);
+
+                let info = d3.select("body").append("div")
+                    .attr("class", "tooltip info")
+                    .style("left", (width*3.2/4) + "px")
+                    .style("top", 450 + "px");
+
+                info.html("Each dot shows represents a nomination." + "<br/>"
+                    + "<br/> Click on a dot to see a summary.");
+
+                // Highlight category when dot is clicked
+                function dotClick(d) {
+                    showOverlay(d, data);
+                }
+                // Reset all dots when mouse leaves group
+                function dotLeave(d) {
+                    d3.selectAll(".dot")
+                        .style("opacity", 1)
+                        .style("fill", function (d) {
+                            return colorScale(d.cat_id);}
+                        )
+                        .attr("r", rNormal);
+                }
+                // Mute other dots when mouse hovers over dot
+                function dotOver(d) {
+                    d3.selectAll(".dot")
+                        .style("opacity", 0.2);
+
+                    d3.select(this)
+                        .style("opacity", 1);
+                }
+                // Show tooltip when mouse is on dot
+                function dotMove(d) {
+                    d3.selectAll(".dot")
+                        .style("opacity", 0.2)
+                        .style("fill", function (d) {
+                            return colorScale(d.cat_id);}
+                        )
+                        .attr("r", rNormal);
+
+                    tooltip.style("display", "block")   // Show tooltip
+                        .style("text-anchor", "end")
+                        .style("opacity", 1);
+
+                    d3.select(this) // Highlight this dot
+                        .attr("r", rHL)
+                        .style("opacity", 1);
+
+                    let winner = "NOMINATION";
+                    if (d.win === "TRUE") {
+                        winner = "WINNER";
+                    }
+
+                    tooltip.html(winner + " - " + d.category + "<br/>"
+                        + "<br/> + Name(s): " + d.name + "<br/>"
+                        + "<br/> + Film: " + d.film + "<br/>"
+                        + "<br/> + Production Year: " + d.year_film)
+                        .style("left", (d3.event.pageX + 10) + "px")
+                        .style("top", (d3.event.pageY + 10) + "px");
+                }
+                // Reset dot when mouse exits
+                function dotOut() {
+                    d3.select(this) // Reset dot
+                        .attr("r", rNoHL);
+
+                    tooltip.style("display", "none");   // Hide tooltip
+                }
+                // Highlight category when rect is clicked
+                function legendClick(d) {
+                    d3.selectAll(".dot")    // Mute all dots
+                        .style("opacity", 0.5)
+                        .style("fill", "lightgrey")
+                        .attr("r", rNoHL);
+
+                    d3.selectAll("." + d)   // Show dots in this category
+                        .style("opacity", 1)
+                        .style("fill", colorScale(d))
+                        .attr("r", rHL);
+
+                    d3.selectAll("." + d)   // Show winners in gold
+                        .filter(".TRUE")
+                        .style("opacity", 1)
+                        .style("fill", "gold")
+                        .attr("r", rHL);
+                }
+                // Reset all rects when mouse leaves legend group
+                function legendLeave(d) {
+                    d3.selectAll(".legendRect")
+                        .style("opacity", 1);
+                }
+                // Mute other legend rects when mouse hovers over rect
+                function legendOver(d) {
+                    d3.selectAll(".legendRect")
+                        .style("opacity", 0.5);
+
+                    d3.select(this)
+                        .style("opacity", 1);
+                }
+                // Show tooltip when mouse is on rect
+                function legendMove(d, i) {
+                    legendTooltip.style("display", "block") // Show tooltip
+                        .style("text-anchor", "end")
+                        .style("opacity", 1);
+
+                    d3.select(this) // Highlight this rect
+                        .attr("width", 18)
+                        .attr("height", 18);
+
+                    legendTooltip.html(allCategories[i])
+                        .style("left", (d3.event.pageX - 100) + "px")
+                        .style("top", (d3.event.pageY + 30) + "px");
+                }
+                // Reset rect when mouse exits
+                function legendOut(d) {
+                    d3.select(this) // Reset rect
+                        .attr("width", 12)
+                        .attr("height", 12);
+
+                    legendTooltip.style("display", "none"); // Hide tooltip
+                }
+            }
+        });
+    </script>
 </body>
 </html>

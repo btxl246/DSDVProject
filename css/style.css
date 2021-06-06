@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: left;
+  font-size: 15px ;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #15252b;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: lightgrey;
+  stroke-opacity: 0.5;
+  stroke-width: 0.5;
+}
+
+.tooltip {
+  position: absolute;
+  width: 300px;
+  pointer-events: none;
+  background: white;
+  border: solid;
+  border-radius: 5px;
+  padding: 5px;
+  font: 15px sans-serif;
+}
+
+#legendTooltip {
+  width: 100px;
+}
+.info {
+  border: 1px dashed;
+  width: 230px;
+}
+
+.bottom {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.top {
+  z-index: 9;
+  width: 945px;
+  height: 630px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.inner {
+  margin-top: 10px;
+  margin-left: 10px;
+}

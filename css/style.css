@@ -1,5 +1,4 @@
 #searchbar {
-  width: 500px;
   align-self: center;
   text-align: center;
   display: flex;
@@ -42,6 +41,7 @@ body {
   align-self: center;
 }
 div.tooltip {
+  position: static;
   width: fit-content;
   text-align: center;
   align-self: center;
@@ -49,7 +49,6 @@ div.tooltip {
   font-family: "Segoe UI";
   font-weight: bolder;
   border: 0px;
-  position: static;
   pointer-events: none;
   font-size: 20px;
 }

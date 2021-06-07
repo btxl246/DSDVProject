@@ -1,3 +1,14 @@
+<html>
+<head>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+<!-- Initialize a select button -->
+<div id = "dropdown"></div>
+</body>
+
+<script>
 var rowConverter = function (d) {
   return {
     year_film: parseInt(d["year_film"]),
@@ -174,3 +185,6 @@ d3.csv(
     }
   }
 );
+</script>
+
+</html>

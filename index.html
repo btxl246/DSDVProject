@@ -91,7 +91,7 @@
 
         let currentDot, dataset, filmDataset;
 
-        let filterList = ["Film", "Nomination"];    // Combox box options
+        let filterList = ["Film", "Nominee"];    // Combox box options
         let filter = innerOverlay.append("select")  // Combo box
             .attr("name", "filterCB")
             .attr("id", "filterCB")
@@ -167,7 +167,7 @@
                 console.log(filmDataset);
                 makeFilmChart();
             }
-            else if (d === filterList[1]) { // Nomination
+            else if (d === filterList[1]) { // Nominee
                 let newdiv = document.createElement("div");
                 newdiv.id = "visual";
                 let innerDiv = document.getElementById("innerChart");
@@ -873,8 +873,8 @@
             });
 
             //console.log(data_filter);
-            let newWidth = 1000;
-            let newHeight = 518;
+            let newWidth = 1200;
+            let newHeight = 800;
             let svg = d3
                 .select("#visual")
                 .append("svg")
@@ -978,33 +978,34 @@
             console.log(data_1);
             console.log(data_2);
             console.log(data_3);
-            svg
-                .append("circle")
+
+            svg.append("circle")
+                .attr("class", "circle")
                 .attr("cx", 0)
                 .attr("cy", 0)
                 .attr("r", 9)
                 .attr("stroke", "black")
                 .attr("stroke-width", "2px")
-                .attr("fill", "rgb(245,245,245");
+                .attr("fill", "rgb(245,245,245)");
 
             // Arc: Year
-            let arcGen1 = d3.arc().innerRadius(190).outerRadius(191);
-            svg
-                .selectAll("pie")
+            let arcGen1 = d3.arc().innerRadius(240).outerRadius(251);
+            svg.selectAll("pie")
                 .data(data_1)
                 .enter()
                 .append("path")
+                .attr("class", "arcGen1")
                 .attr("d", arcGen1)
-                .attr("fill", "rgb(245,245,245")
-                .attr("stroke", "rgb(245,245,245")
-                .style("stroke-width", "4px")
+                .attr("fill", "rgb(245,245,245)")
+                .attr("stroke", "rgb(245,245,245)")
+                .style("stroke-width", "5px")
                 .style("opacity", 0.7);
 
-            svg
-                .selectAll("pie")
+            svg.selectAll("pie")
                 .data(data_1)
                 .enter()
                 .append("text")
+                .attr("class", "arcGen1 text")
                 .attr("dy", "0.31em")
                 .text(function (d) {
                     return d.data.value[0];
@@ -1021,20 +1022,10 @@
                             Math.PI -
                             90;
                     return (
-                        "translate(" +
-                        arcGen1.centroid(d)[0] +
-                        "," +
-                        arcGen1.centroid(d)[1] +
-                        ") " +
-                        "rotate(" +
-                        rotation +
-                        ")"
+                        "translate(" + arcGen1.centroid(d)[0] + "," + arcGen1.centroid(d)[1] + ") " +
+                        "rotate(" + rotation + ")"
                     );
                 })
-                .style("font-size", function (d) {
-                    return 12;
-                })
-                .style("font-family", "san-serif")
                 .attr("fill", function (d) {
                     if (d.data.value[2] === "TRUE") {
                         return "#e85d04";
@@ -1045,22 +1036,22 @@
 
             // Arc 2: Category
             let arcGen2 = d3.arc().innerRadius(15).outerRadius(16);
-            svg
-                .selectAll("pie")
+            svg.selectAll("pie")
                 .data(data_2)
                 .enter()
                 .append("path")
+                .attr("class", "arcGen2")
                 .attr("d", arcGen2)
-                .attr("fill", "rgb(245,245,245")
-                .attr("stroke", "rgb(245,245,245")
-                .style("stroke-width", "4px")
-                .style("opacity", 0.7);
+                .attr("fill", "rgb(245,245,245)")
+                .attr("stroke", "rgb(245,245,245)")
+                .style("stroke-width", "5px")
+                .style("opacity", 0.9);
 
-            svg
-                .selectAll("pie")
+            svg.selectAll("pie")
                 .data(data_2)
                 .enter()
                 .append("text")
+                .attr("class", "arcGen2 text")
                 .attr("dy", "0.3em")
                 .text(function (d) {
                     return d.data.value[1];
@@ -1077,20 +1068,10 @@
                             Math.PI -
                             90;
                     return (
-                        "translate(" +
-                        arcGen2.centroid(d)[0] +
-                        "," +
-                        arcGen2.centroid(d)[1] +
-                        ") " +
-                        "rotate(" +
-                        rotation +
-                        ")"
+                        "translate(" + arcGen2.centroid(d)[0] + "," + arcGen2.centroid(d)[1] + ") " +
+                        "rotate(" + rotation + ")"
                     );
                 })
-                .style("font-size", function (d) {
-                    return 11;
-                })
-                .style("font-family", "san-serif")
                 .attr("fill", function (d) {
                     if (d.data.value[2] === "TRUE") {
                         return "#e85d04";
@@ -1099,30 +1080,37 @@
                     }
                 });
 
-            let arcGen3 = d3.arc().innerRadius(10).outerRadius(187);
-            svg
-                .selectAll("pie")
+            let arcGen3 = d3.arc().innerRadius(10).outerRadius(237);
+            svg.selectAll("pie")
                 .data(data_2)
                 .enter()
                 .append("path")
+                .attr("class", "arcGen3")
                 .attr("d", arcGen3)
                 .attr("fill", "#00000000")
                 .attr("stroke", "black")
-                .style("stroke-opacity", 0.4)
+                .style("stroke-opacity", 0.8)
                 .style("stroke-dasharray", "5 10 5 10")
                 .style("stroke-width", "2px")
                 .style("opacity", 0.5);
 
             // Arc 3: Winner/Nominee
-            let arcGen4 = d3.arc().innerRadius(230).outerRadius(270);
-            svg
-                .selectAll("pie")
+            let arcGen4 = d3.arc().innerRadius(300).outerRadius(320);
+
+            svg.selectAll("pie")
                 .data(data_3)
                 .enter()
                 .append("path")
+                .attr("class", "arcGen4")
                 .attr("d", arcGen4)
-                .attr("fill", "#00000000")
-                .attr("stroke", "rgb(245,245,245")
+                .attr("fill", function (d) {
+                    if (d.data.key === "TRUE") {
+                        return "#e85d04";
+                    } else if (d.data.key === "FALSE") {
+                        return "#0a2e36";
+                    }
+                })
+                .attr("stroke", "rgb(245,245,245)")
                 .style("stroke-width", "4px")
                 .style("opacity", function (d) {
                     if (d.data.key === 0) {
@@ -1132,33 +1120,33 @@
                     }
                 });
 
-            svg
-                .selectAll("pie")
+            svg.selectAll("pie")
                 .data(data_3)
                 .enter()
                 .append("text")
+                .attr("class", "arcGen4 text")
                 .text(function (d) {
                     if (d.data.key === "TRUE") {
                         return "Winner (" + d.data.value + ")";
                     } else if (d.data.key === "FALSE") {
-                        return "Nominee (" + d.data.value + ")";
+                        return "Nominated (" + d.data.value + ")";
                     }
                 })
                 .style("text-anchor", "middle")
                 .style("text-align", "center")
                 .attr("transform", function (d) {
+                    let offset = [0, 50];
+                    if (data_3[0].value > 0 && data_3[1].value > 0) {
+                        if (d.data.key === "TRUE") {
+                            offset = [120, 70];
+                        } else if (d.data.key === "FALSE") {
+                            offset = [-60, 70];
+                        }
+                    }
                     return (
-                        "translate(" +
-                        arcGen4.centroid(d)[0] +
-                        "," +
-                        arcGen4.centroid(d)[1] +
-                        ")"
+                        "translate(" + (arcGen4.centroid(d)[0] + offset[0]) + "," + (arcGen4.centroid(d)[1] + offset[1]) + ")"
                     );
                 })
-                .style("font-size", function (d) {
-                    return 12;
-                })
-                .style("font-family", "san-serif")
                 .attr("fill", function (d) {
                     if (d.data.key === "TRUE") {
                         if (d.data.value !== 0) {
@@ -1174,12 +1162,13 @@
                         }
                     }
                 });
-            let arcGen5 = d3.arc().innerRadius(10).outerRadius(230);
-            svg
-                .selectAll("pie")
+
+            let arcGen5 = d3.arc().innerRadius(10).outerRadius(300);
+            svg.selectAll("pie")
                 .data(data_3)
                 .enter()
                 .append("path")
+                .attr("class", "arcGen5")
                 .attr("d", arcGen5)
                 .attr("fill", "#00000000")
                 .attr("stroke", function (d) {

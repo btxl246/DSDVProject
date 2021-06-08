@@ -18,7 +18,7 @@
                 opening: parseInt(d.opening_gross),
                 usa: parseInt(d.usa_gross),
                 ww: parseInt(d.ww_gross),
-                imdb: parseFloat(d.imdb),
+                imdb: parseFloat(d.imdb)*10,
                 meta: parseInt(d.metacritic),
                 rmc: parseInt(d.rm_critics),
                 rma: parseInt(d.rm_audience)
@@ -620,22 +620,26 @@
                         .domain([0, maxProfit + 10000])
                         .interpolator(d3.interpolateYlOrRd);
 
-                    let xScale = d3.scaleBand().range([chartMargin.left*8, chartWidth - chartMargin.right*2]).padding(0.4);
-                    xScale.domain(profitArray.map(function(d, i) { return i; }));
-                    let xAxis = d3.axisBottom().scale(xScale).tickFormat(function (d, i) { return profitList[i]});
+                    let xScale = d3.scaleBand().range([chartMargin.left * 8, chartWidth - chartMargin.right * 2]).padding(0.4);
+                    xScale.domain(profitArray.map(function (d, i) {
+                        return i;
+                    }));
+                    let xAxis = d3.axisBottom().scale(xScale).tickFormat(function (d, i) {
+                        return profitList[i]
+                    });
 
                     let yScale = d3.scaleLinear()
                         .domain([0, maxProfit + 10000])
-                        .range([chartHeight - chartMargin.bottom*8, chartMargin.top*4]);
+                        .range([chartHeight - chartMargin.bottom * 8, chartMargin.top * 4]);
                     let yAxis = d3.axisLeft().scale(yScale).ticks(5);
 
                     let x = profitChart.append("g")
                         .attr("class", "x axis")
-                        .attr("transform", "translate(" + 0 + ", " + (chartHeight - chartMargin.bottom*8) + ")")
+                        .attr("transform", "translate(" + 0 + ", " + (chartHeight - chartMargin.bottom * 8) + ")")
                         .call(xAxis);
                     let y = profitChart.append("g")
                         .attr("class", "y axis")
-                        .attr("transform", "translate(" + chartMargin.left*8 + ", 0)")
+                        .attr("transform", "translate(" + chartMargin.left * 8 + ", 0)")
                         .call(yAxis)
                         .selectAll("text")
                         .style("text-anchor", "baseline")
@@ -648,7 +652,7 @@
                         .attr("class", "title")
                         .text("Budget/Revenue")
                         .style("font-size", "15px")
-                        .attr("x", (-chartMargin.left*8+ chartWidth - chartMargin.right*2)/2)
+                        .attr("x", (-chartMargin.left * 8 + chartWidth - chartMargin.right * 2) / 2)
                         .attr("y", chartHeight - chartMargin.bottom);
 
                     // Add Y Title
@@ -657,16 +661,16 @@
                         .text("Dollars")
                         .attr("transform", "rotate(-90)")
                         .style("font-size", "15px")
-                        .attr("x", -chartHeight/2)
-                        .attr("y", chartMargin.left*2);
+                        .attr("x", -chartHeight / 2)
+                        .attr("y", chartMargin.left * 2);
 
                     // Chart title
                     profitChart.append("text")
                         .attr("class", "title")
                         .text("Budget and Revenue of " + currentFilm.film)
                         .style("font-size", "20px")
-                        .attr("x", (-chartMargin.left*8+ chartWidth - chartMargin.right*2)/2)
-                        .attr("y", chartMargin.top*2);
+                        .attr("x", (-chartMargin.left * 8 + chartWidth - chartMargin.right * 2) / 2)
+                        .attr("y", chartMargin.top * 2);
 
                     let bars = profitChart.selectAll(".bar")
                         .data(profitArray)
@@ -681,7 +685,7 @@
                         })
                         .attr("width", xScale.bandwidth())
                         .attr("height", function (d) {
-                            return chartHeight - chartMargin.bottom*8 - yScale(d);
+                            return chartHeight - chartMargin.bottom * 8 - yScale(d);
                         })
                         .attr("fill", function (d) {
                             return colorScale(d);
@@ -689,14 +693,130 @@
 
                     bars.append("text")
                         .attr("x", function (d, i) {
-                            return xScale(i) + xScale.bandwidth()/4;
+                            return xScale(i) + xScale.bandwidth() / 4;
                         })
                         .attr("y", function (d) {
                             return yScale(d) - 5;
                         })
-                        .text(function (d) { return d})
+                        .text(function (d) {
+                            return d
+                        })
                         .attr("font-size", 12);
+
+                    innerChart.append("p");
+
+                    let ratingList = ["IMDB", "Metacritic", "Rotten Tomatoes - Critics", "Rotten Tomatoes - Audience"];
+                    let temp = [currentFilm.imdb,
+                        currentFilm.meta,
+                        currentFilm.rmc,
+                        currentFilm.rma];
+                    let ratings = [];
+                    let count = 0;
+                    for (let i = 0; i < temp.length; i++) {
+                        if (!isNaN(temp[i]))
+                            ratings.push(temp[i]);
+                        else {
+                            ratings.push(NaN);
+                            count++;
+                        }
                     }
+                    console.log(ratings);
+
+                    if (count < 4) {
+                        let ratingsChart = innerChart.append("svg")
+                            .attr("width", chartWidth)
+                            .attr("height", chartHeight);
+
+                        let max = 100;
+
+                        let colorScale = d3.scaleSequential()
+                            .domain([0, max])
+                            .interpolator(d3.interpolateYlOrRd);
+
+                        let xScale = d3.scaleBand().range([chartMargin.left * 8, chartWidth - chartMargin.right * 2]).padding(0.4);
+                        xScale.domain(ratings.map(function (d, i) {
+                            return i;
+                        }));
+                        let xAxis = d3.axisBottom().scale(xScale).tickFormat(function (d, i) {
+                            return ratingList[i]
+                        });
+
+                        let yScale = d3.scaleLinear()
+                            .domain([0, max])
+                            .range([chartHeight - chartMargin.bottom * 8, chartMargin.top * 4]);
+                        let yAxis = d3.axisLeft().scale(yScale).ticks(5);
+
+                        let x = ratingsChart.append("g")
+                            .attr("class", "x axis")
+                            .attr("transform", "translate(" + 0 + ", " + (chartHeight - chartMargin.bottom * 8) + ")")
+                            .call(xAxis);
+                        let y = ratingsChart.append("g")
+                            .attr("class", "y axis")
+                            .attr("transform", "translate(" + chartMargin.left * 8 + ", 0)")
+                            .call(yAxis)
+                            .selectAll("text")
+                            .style("text-anchor", "baseline")
+                            .attr("dx", "2.5em")
+                            .attr("dy", "-1em")
+                            .attr("transform", "rotate(-90)");
+
+                        // Add X title
+                        ratingsChart.append("text")
+                            .attr("class", "title")
+                            .text("Rated by")
+                            .style("font-size", "15px")
+                            .attr("x", (-chartMargin.left * 8 + chartWidth - chartMargin.right * 2) / 2)
+                            .attr("y", chartHeight - chartMargin.bottom);
+
+                        // Add Y Title
+                        ratingsChart.append("text")
+                            .attr("class", "title")
+                            .text("Score")
+                            .attr("transform", "rotate(-90)")
+                            .style("font-size", "15px")
+                            .attr("x", -chartHeight / 2)
+                            .attr("y", chartMargin.left * 2);
+
+                        // Chart title
+                        ratingsChart.append("text")
+                            .attr("class", "title")
+                            .text("Ratings of " + currentFilm.film)
+                            .style("font-size", "20px")
+                            .attr("x", (-chartMargin.left * 8 + chartWidth - chartMargin.right * 2) / 2)
+                            .attr("y", chartMargin.top * 2);
+
+                        let bars = ratingsChart.selectAll(".bar")
+                            .data(ratings)
+                            .enter();
+                        bars.append("rect")
+                            .attr("class", "bar")
+                            .attr("x", function (d, i) {
+                                return xScale(i);
+                            })
+                            .attr("y", function (d) {
+                                return yScale(d);
+                            })
+                            .attr("width", xScale.bandwidth())
+                            .attr("height", function (d) {
+                                return chartHeight - chartMargin.bottom * 8 - yScale(d);
+                            })
+                            .attr("fill", function (d) {
+                                return colorScale(d);
+                            });
+
+                        bars.append("text")
+                            .attr("x", function (d, i) {
+                                return xScale(i) + xScale.bandwidth() / 4;
+                            })
+                            .attr("y", function (d) {
+                                return yScale(d) - 5;
+                            })
+                            .text(function (d) {
+                                return d
+                            })
+                            .attr("font-size", 12);
+                    }
+                }
                 else {
                     innerChart.append("div").text("No data for this film.");
                 }

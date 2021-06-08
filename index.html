@@ -8,6 +8,21 @@
 </head>
 <body>
     <script>
+        let filmConverter = function (d) {
+            return {
+                year_film: parseInt(d.year_film),
+                year_ceremony: parseInt(d.year_ceremony),
+                film: d.film,
+                budget: parseInt(d.budget),
+                opening: parseInt(d.opening_gross),
+                usa: parseInt(d.usa_gross),
+                ww: parseInt(d.ww_gross),
+                imdb: parseFloat(d.imdb),
+                meta: parseInt(d.metacritic),
+                rmc: parseInt(d.rm_critics),
+                rma: parseInt(d.rm_audience)
+            };
+        }
         let rowConverter = function (d) {
             return {
                 year_film: parseInt(d.year_film),
@@ -73,7 +88,7 @@
             .attr("for", "filterCB")
             .text("About the ");
 
-        let currentDot, dataset;
+        let currentDot, dataset, filmDataset;
 
         let filterList = ["Film", "Nomination"];    // Combox box options
         let filter = innerOverlay.append("select")  // Combo box
@@ -132,8 +147,7 @@
                 currentDotDetail.html("Oscars " + currentDot.year_ceremony + " - Year " + currentDot.cere_num + "<br>"
                 + "<br> + " + winner + " - " + currentDot.category + "<br>"
                 + "<br> + Film: " + currentDot.film + "<br>"
-                + "<br> + Name(s): " + currentDot.name + "<br>"
-                + "<br> + Production Year: " + currentDot.year_film);
+                + "<br> + Name(s): " + currentDot.name);
                 overlay.style("display", "block");  // Show
             }
             else {
@@ -162,6 +176,15 @@
             .attr("x", margin.left)
             .attr("y", margin.top);
 
+        d3.csv("data/film_data.csv", filmConverter, function (error, data) {
+            if (error) {
+                console.log(error);
+            }
+            else {
+                console.log(data);
+                filmDataset = data;
+            }
+        });
         d3.csv("data/oscars_data.csv", rowConverter, function (error, data) {
             if (error) {
                 console.log(error);

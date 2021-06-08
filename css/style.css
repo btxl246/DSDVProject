@@ -1,16 +1,56 @@
 body {
-  font-family: time new roman;
-  background: ;
-  color: #EB6997 ;
+  font-family: Arial, sans-serif;
   text-align: left;
+  font-size: 15px ;
 }
-#name {
-  font-family: time new roman;
-  color: #EA5284;
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #15252b;
+  shape-rendering: crispEdges;
 }
-.btext { 
-  font-weight: bold;
+
+.dot {
+  stroke: lightgrey;
+  stroke-opacity: 0.5;
+  stroke-width: 0.5;
 }
-#qu {
-  font-style: italic;
+
+.tooltip {
+  position: absolute;
+  width: 300px;
+  pointer-events: none;
+  background: white;
+  border: solid;
+  border-radius: 5px;
+  padding: 5px;
+  font: 15px sans-serif;
+}
+
+#legendTooltip {
+  width: 200px;
+}
+
+.info {
+  border: 1px dashed;
+  width: 230px;
+}
+
+.bottom {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.top {
+  z-index: 9;
+  width: 1240px;
+  height: 7100px;
+  /*margin-top: 10px;
+  margin-left: 10px;*/
+}
+
+.inner {
+  margin-top: 10px;
+  margin-left: 10px;
 }

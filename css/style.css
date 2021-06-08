@@ -28,8 +28,9 @@ body {
 }
 
 #legendTooltip {
-  width: 100px;
+  width: 200px;
 }
+
 .info {
   border: 1px dashed;
   width: 230px;
@@ -43,10 +44,10 @@ body {
 
 .top {
   z-index: 9;
-  width: 945px;
-  height: 630px;
-  margin-top: 10px;
-  margin-left: 10px;
+  width: 1240px;
+  height: 710px;
+  /*margin-top: 10px;
+  margin-left: 10px;*/
 }
 
 .inner {

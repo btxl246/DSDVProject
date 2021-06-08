@@ -1,267 +1,267 @@
 year_film,year_ceremony,ceremony,category_id,category,name,film,winner,,,count
-1927,1928,1,AR,ACTOR,Richard Barthelmess,The Noose,FALSE,,,1
-1927,1928,1,AR,ACTOR,Emil Jannings,The Last Command,TRUE,,,2
-1927,1928,1,AS,ACTRESS,Louise Dresser,A Ship Comes In,FALSE,,,3
-1927,1928,1,AS,ACTRESS,Janet Gaynor,7th Heaven,TRUE,,,4
-1927,1928,1,AS,ACTRESS,Gloria Swanson,Sadie Thompson,FALSE,,,5
-1927,1928,1,AD,ART DIRECTION,Rochus Gliese,Sunrise,FALSE,,,6
-1927,1928,1,AD,ART DIRECTION,William Cameron Menzies,The Dove,TRUE,,,7
-1927,1928,1,AD,ART DIRECTION,Harry Oliver,7th Heaven,FALSE,,,8
-1927,1928,1,C,CINEMATOGRAPHY,George Barnes,The Devil Dancer,FALSE,,,9
-1927,1928,1,C,CINEMATOGRAPHY,Charles Rosher,Sunrise,TRUE,,,10
-1927,1928,1,C,CINEMATOGRAPHY,Karl Struss,Sunrise,TRUE,,,11
-1927,1928,1,DCP,DIRECTING (Comedy Picture),Lewis Milestone,Two Arabian Knights,TRUE,,,12
-1927,1928,1,DCP,DIRECTING (Comedy Picture),Ted Wilde,Speedy,FALSE,,,13
-1927,1928,1,DDP,DIRECTING (Dramatic Picture),Frank Borzage,7th Heaven,TRUE,,,14
-1927,1928,1,DDP,DIRECTING (Dramatic Picture),Herbert Brenon,Sorrell and Son,FALSE,,,15
-1927,1928,1,DDP,DIRECTING (Dramatic Picture),King Vidor,The Crowd,FALSE,,,16
-1927,1928,1,EE,ENGINEERING EFFECTS,Ralph Hammeras,,FALSE,,,17
-1927,1928,1,EE,ENGINEERING EFFECTS,Roy Pomeroy,Wings,TRUE,,,18
-1927,1928,1,EE,ENGINEERING EFFECTS,Nugent Slaughter,,FALSE,,,19
-1927,1928,1,OP,OUTSTANDING PICTURE,The Caddo Company,The Racket,FALSE,,,20
-1927,1928,1,OP,OUTSTANDING PICTURE,Fox,7th Heaven,FALSE,,,21
-1927,1928,1,OP,OUTSTANDING PICTURE,Paramount Famous Lasky,Wings,TRUE,,,22
-1927,1928,1,UAP,UNIQUE AND ARTISTIC PICTURE,Fox,Sunrise,TRUE,,,23
-1927,1928,1,UAP,UNIQUE AND ARTISTIC PICTURE,Metro-Goldwyn-Mayer,The Crowd,FALSE,,,24
-1927,1928,1,UAP,UNIQUE AND ARTISTIC PICTURE,Paramount Famous Lasky,Chang,FALSE,,,25
-1927,1928,1,WA,WRITING (Adaptation),Alfred Cohn,The Jazz Singer,FALSE,,,26
-1927,1928,1,WA,WRITING (Adaptation),Anthony Coldeway,Glorious Betsy,FALSE,,,27
-1927,1928,1,WA,WRITING (Adaptation),Benjamin Glazer,7th Heaven,TRUE,,,28
-1927,1928,1,WOS,WRITING (Original Story),Lajos Biro,The Last Command,FALSE,,,29
-1927,1928,1,WOS,WRITING (Original Story),Ben Hecht,Underworld,TRUE,,,30
-1927,1928,1,WTW,WRITING (Title Writing),Gerald Duffy,The Private Life of Helen of Troy,FALSE,,,31
-1927,1928,1,WTW,WRITING (Title Writing),Joseph Farnham,,TRUE,,,32
-1927,1928,1,WTW,WRITING (Title Writing),"George Marion, Jr.",,FALSE,,,33
-1928,1929,2,AR,ACTOR,George Bancroft,Thunderbolt,FALSE,,,1
-1928,1929,2,AR,ACTOR,Warner Baxter,In Old Arizona,TRUE,,,2
-1928,1929,2,AR,ACTOR,Chester Morris,Alibi,FALSE,,,3
-1928,1929,2,AR,ACTOR,Paul Muni,The Valiant,FALSE,,,4
-1928,1929,2,AR,ACTOR,Lewis Stone,The Patriot,FALSE,,,5
-1928,1929,2,AS,ACTRESS,Ruth Chatterton,Madame X,FALSE,,,6
-1928,1929,2,AS,ACTRESS,Betty Compson,The Barker,FALSE,,,7
-1928,1929,2,AS,ACTRESS,Jeanne Eagels,The Letter,FALSE,,,8
-1928,1929,2,AS,ACTRESS,Corinne Griffith,The Divine Lady,FALSE,,,9
-1928,1929,2,AS,ACTRESS,Bessie Love,The Broadway Melody,FALSE,,,10
-1928,1929,2,AS,ACTRESS,Mary Pickford,Coquette,TRUE,,,11
-1928,1929,2,AD,ART DIRECTION,Hans Dreier,The Patriot,FALSE,,,12
-1928,1929,2,AD,ART DIRECTION,Cedric Gibbons,The Bridge of San Luis Rey,TRUE,,,13
-1928,1929,2,AD,ART DIRECTION,Mitchell Leisen,Dynamite,FALSE,,,14
-1928,1929,2,AD,ART DIRECTION,William Cameron Menzies,Alibi,FALSE,,,15
-1928,1929,2,AD,ART DIRECTION,Harry Oliver,Street Angel,FALSE,,,16
-1928,1929,2,C,CINEMATOGRAPHY,George Barnes,Our Dancing Daughters,FALSE,,,17
-1928,1929,2,C,CINEMATOGRAPHY,Clyde De Vinna,White Shadows in the South Seas,TRUE,,,18
-1928,1929,2,C,CINEMATOGRAPHY,Arthur Edeson,In Old Arizona,FALSE,,,19
-1928,1929,2,C,CINEMATOGRAPHY,Ernest Palmer,Four Devils,FALSE,,,20
-1928,1929,2,C,CINEMATOGRAPHY,John Seitz,The Divine Lady,FALSE,,,21
-1928,1929,2,D,DIRECTING,Lionel Barrymore,Madame X,FALSE,,,22
-1928,1929,2,D,DIRECTING,Harry Beaumont,The Broadway Melody,FALSE,,,23
-1928,1929,2,D,DIRECTING,Irving Cummings,In Old Arizona,FALSE,,,24
-1928,1929,2,D,DIRECTING,Frank Lloyd,The Divine Lady,TRUE,,,25
-1928,1929,2,D,DIRECTING,Frank Lloyd,Drag,FALSE,,,26
-1928,1929,2,D,DIRECTING,Ernst Lubitsch,The Patriot,FALSE,,,27
-1928,1929,2,OP,OUTSTANDING PICTURE,Feature Productions,Alibi,FALSE,,,28
-1928,1929,2,OP,OUTSTANDING PICTURE,Fox,In Old Arizona,FALSE,,,29
-1928,1929,2,OP,OUTSTANDING PICTURE,Metro-Goldwyn-Mayer,The Broadway Melody,TRUE,,,30
-1928,1929,2,OP,OUTSTANDING PICTURE,Metro-Goldwyn-Mayer,Hollywood Revue,FALSE,,,31
-1928,1929,2,OP,OUTSTANDING PICTURE,Paramount Famous Lasky,The Patriot,FALSE,,,32
-1928,1929,2,W,WRITING,Tom Barry,In Old Arizona,FALSE,,,33
-1928,1929,2,W,WRITING,Elliott Clawson,The Cop,FALSE,,,34
-1928,1929,2,W,WRITING,Hans Kraly,The Last of Mrs. Cheyney,FALSE,,,35
-1928,1929,2,W,WRITING,Hans Kraly,The Patriot,TRUE,,,36
-1928,1929,2,W,WRITING,Josephine Lovett,Our Dancing Daughters,FALSE,,,37
-1928,1929,2,W,WRITING,Bess Meredyth,A Woman of Affairs,FALSE,,,38
-1929,1930,3,AR,ACTOR,George Arliss,Disraeli,TRUE,,,1
-1929,1930,3,AR,ACTOR,George Arliss,The Green Goddess,FALSE,,,2
-1929,1930,3,AR,ACTOR,Wallace Beery,The Big House,FALSE,,,3
-1929,1930,3,AR,ACTOR,Maurice Chevalier,The Big Pond,FALSE,,,4
-1929,1930,3,AR,ACTOR,Ronald Colman,Bulldog Drummond,FALSE,,,5
-1929,1930,3,AR,ACTOR,Lawrence Tibbett,The Rogue Song,FALSE,,,6
-1929,1930,3,AS,ACTRESS,Nancy Carroll,The Devil's Holiday,FALSE,,,7
-1929,1930,3,AS,ACTRESS,Ruth Chatterton,Sarah and Son,FALSE,,,8
-1929,1930,3,AS,ACTRESS,Greta Garbo,Anna Christie,FALSE,,,9
-1929,1930,3,AS,ACTRESS,Norma Shearer,The Divorcee,TRUE,,,10
-1929,1930,3,AS,ACTRESS,Norma Shearer,Their Own Desire,FALSE,,,11
-1929,1930,3,AS,ACTRESS,Gloria Swanson,The Trespasser,FALSE,,,12
-1929,1930,3,AD,ART DIRECTION,(William Cameron Menzies),Bulldog Drummond,FALSE,,,13
-1929,1930,3,AD,ART DIRECTION,Herman Rosse,King of Jazz,TRUE,,,14
-1929,1930,3,AD,ART DIRECTION,(Hans Dreier),The Love Parade,FALSE,,,15
-1929,1930,3,AD,ART DIRECTION,(Jack Okey),Sally,FALSE,,,16
-1929,1930,3,AD,ART DIRECTION,(Hans Dreier),The Vagabond King,FALSE,,,17
-1929,1930,3,C,CINEMATOGRAPHY,(Arthur Edeson),All Quiet on the Western Front,FALSE,,,18
-1929,1930,3,C,CINEMATOGRAPHY,(William Daniels),Anna Christie,FALSE,,,19
-1929,1930,3,C,CINEMATOGRAPHY,"(Gaetano Gaudio), (Harry Perry)",Hell's Angels,FALSE,,,20
-1929,1930,3,C,CINEMATOGRAPHY,(Victor Milner),The Love Parade,FALSE,,,21
-1929,1930,3,C,CINEMATOGRAPHY,"Joseph T. Rucker, Willard Van Der Veer",With Byrd at the South Pole,TRUE,,,22
-1929,1930,3,D,DIRECTING,Clarence Brown,Anna Christie,FALSE,,,23
-1929,1930,3,D,DIRECTING,Robert Leonard,The Divorcee,FALSE,,,24
-1929,1930,3,D,DIRECTING,Ernst Lubitsch,The Love Parade,FALSE,,,25
-1929,1930,3,D,DIRECTING,Lewis Milestone,All Quiet on the Western Front,TRUE,,,26
-1929,1930,3,D,DIRECTING,King Vidor,Hallelujah,FALSE,,,27
-1929,1930,3,OPT,OUTSTANDING PRODUCTION,Universal,All Quiet on the Western Front,TRUE,,,28
-1929,1930,3,OPT,OUTSTANDING PRODUCTION,Cosmopolitan,The Big House,FALSE,,,29
-1929,1930,3,OPT,OUTSTANDING PRODUCTION,Warner Bros.,Disraeli,FALSE,,,30
-1929,1930,3,OPT,OUTSTANDING PRODUCTION,Metro-Goldwyn-Mayer,The Divorcee,FALSE,,,31
-1929,1930,3,OPT,OUTSTANDING PRODUCTION,Paramount Famous Lasky,The Love Parade,FALSE,,,32
-1929,1930,3,SR,SOUND RECORDING,"Metro-Goldwyn-Mayer Studio Sound Department, Douglas Shearer, Sound Director",The Big House,TRUE,,,33
-1929,1930,3,SR,SOUND RECORDING,"(RKO Radio Studio Sound Department, John Tribby, Sound Director)",The Case of Sergeant Grischa,FALSE,,,34
-1929,1930,3,SR,SOUND RECORDING,"(Paramount Famous Lasky Studio Sound Department, Franklin Hansen, Sound Director)",The Love Parade,FALSE,,,35
-1929,1930,3,SR,SOUND RECORDING,"(United Artists Studio Sound Department, Oscar Lagerstrom, Sound Director)",Raffles,FALSE,,,36
-1929,1930,3,SR,SOUND RECORDING,"(First National Studio Sound Department, George Groves, Sound Director)",Song of the Flame,FALSE,,,37
-1929,1930,3,W,WRITING,"(George Abbott), (Maxwell Anderson), (Del Andrews)",All Quiet on the Western Front,FALSE,,,38
-1929,1930,3,W,WRITING,Frances Marion,The Big House,TRUE,,,39
-1929,1930,3,W,WRITING,(Julian Josephson),Disraeli,FALSE,,,40
-1929,1930,3,W,WRITING,(John Meehan),The Divorcee,FALSE,,,41
-1929,1930,3,W,WRITING,(Howard Estabrook),Street of Chance,FALSE,,,42
-1930,1931,4,AR,ACTOR,Lionel Barrymore,A Free Soul,TRUE,,,1
-1930,1931,4,AR,ACTOR,Jackie Cooper,Skippy,FALSE,,,2
-1930,1931,4,AR,ACTOR,Richard Dix,Cimarron,FALSE,,,3
-1930,1931,4,AR,ACTOR,Fredric March,The Royal Family of Broadway,FALSE,,,4
-1930,1931,4,AR,ACTOR,Adolphe Menjou,The Front Page,FALSE,,,5
-1930,1931,4,AS,ACTRESS,Marlene Dietrich,Morocco,FALSE,,,6
-1930,1931,4,AS,ACTRESS,Marie Dressler,Min and Bill,TRUE,,,7
-1930,1931,4,AS,ACTRESS,Irene Dunne,Cimarron,FALSE,,,8
-1930,1931,4,AS,ACTRESS,Ann Harding,Holiday,FALSE,,,9
-1930,1931,4,AS,ACTRESS,Norma Shearer,A Free Soul,FALSE,,,10
-1930,1931,4,AD,ART DIRECTION,Max Rée,Cimarron,TRUE,,,11
-1930,1931,4,AD,ART DIRECTION,"Stephen Goosson, Ralph Hammeras",Just Imagine,FALSE,,,12
-1930,1931,4,AD,ART DIRECTION,Hans Dreier,Morocco,FALSE,,,13
-1930,1931,4,AD,ART DIRECTION,Anton Grot,Svengali,FALSE,,,14
-1930,1931,4,AD,ART DIRECTION,Richard Day,Whoopee!,FALSE,,,15
-1930,1931,4,C,CINEMATOGRAPHY,Edward Cronjager,Cimarron,FALSE,,,16
-1930,1931,4,C,CINEMATOGRAPHY,Lee Garmes,Morocco,FALSE,,,17
-1930,1931,4,C,CINEMATOGRAPHY,Charles Lang,The Right to Love,FALSE,,,18
-1930,1931,4,C,CINEMATOGRAPHY,"Barney ""Chick"" McGill",Svengali,FALSE,,,19
-1930,1931,4,C,CINEMATOGRAPHY,Floyd Crosby,Tabu,TRUE,,,20
-1930,1931,4,D,DIRECTING,Wesley Ruggles,Cimarron,FALSE,,,21
-1930,1931,4,D,DIRECTING,Clarence Brown,A Free Soul,FALSE,,,22
-1930,1931,4,D,DIRECTING,Lewis Milestone,The Front Page,FALSE,,,23
-1930,1931,4,D,DIRECTING,Josef Von Sternberg,Morocco,FALSE,,,24
-1930,1931,4,D,DIRECTING,Norman Taurog,Skippy,TRUE,,,25
-1930,1931,4,OPT,OUTSTANDING PRODUCTION,RKO Radio,Cimarron,TRUE,,,26
-1930,1931,4,OPT,OUTSTANDING PRODUCTION,Fox,East Lynne,FALSE,,,27
-1930,1931,4,OPT,OUTSTANDING PRODUCTION,The Caddo Company,The Front Page,FALSE,,,28
-1930,1931,4,OPT,OUTSTANDING PRODUCTION,Paramount Publix,Skippy,FALSE,,,29
-1930,1931,4,OPT,OUTSTANDING PRODUCTION,Metro-Goldwyn-Mayer,Trader Horn,FALSE,,,30
-1930,1931,4,SR,SOUND RECORDING,Samuel Goldwyn - United Artists Studio Sound Department,,FALSE,,,31
-1930,1931,4,SR,SOUND RECORDING,Metro-Goldwyn-Mayer Studio Sound Department,,FALSE,,,32
-1930,1931,4,SR,SOUND RECORDING,Paramount Publix Studio Sound Department,,TRUE,,,33
-1930,1931,4,SR,SOUND RECORDING,RKO Radio Studio Sound Department,,FALSE,,,34
-1930,1931,4,WA,WRITING (Adaptation),Howard Estabrook,Cimarron,TRUE,,,35
-1930,1931,4,WA,WRITING (Adaptation),"Seton I. Miller, Fred Niblo, Jr.",The Criminal Code,FALSE,,,36
-1930,1931,4,WA,WRITING (Adaptation),Horace Jackson,Holiday,FALSE,,,37
-1930,1931,4,WA,WRITING (Adaptation),"Francis Faragoh, Robert N. Lee",Little Caesar,FALSE,,,38
-1930,1931,4,WA,WRITING (Adaptation),"Joseph L. Mankiewicz, Sam Mintz",Skippy,FALSE,,,39
-1930,1931,4,WOS,WRITING (Original Story),John Monk Saunders,The Dawn Patrol,TRUE,,,40
-1930,1931,4,WOS,WRITING (Original Story),Rowland Brown,The Doorway to Hell,FALSE,,,41
-1930,1931,4,WOS,WRITING (Original Story),"Harry d'Abbadie d'Arrast, Douglas Doty, Donald Ogden Stewart",Laughter,FALSE,,,42
-1930,1931,4,WOS,WRITING (Original Story),"John Bright, Kubec Glasmon",The Public Enemy,FALSE,,,43
-1930,1931,4,WOS,WRITING (Original Story),"Lucien Hubbard, Joseph Jackson",Smart Money,FALSE,,,44
-1931,1932,5,AR,ACTOR,Wallace Beery,The Champ,TRUE,,,1
-1931,1932,5,AR,ACTOR,Alfred Lunt,The Guardsman,FALSE,,,2
-1931,1932,5,AR,ACTOR,Fredric March,Dr. Jekyll and Mr. Hyde,TRUE,,,3
-1931,1932,5,AS,ACTRESS,Marie Dressler,Emma,FALSE,,,4
-1931,1932,5,AS,ACTRESS,Lynn Fontanne,The Guardsman,FALSE,,,5
-1931,1932,5,AS,ACTRESS,Helen Hayes,The Sin of Madelon Claudet,TRUE,,,6
-1931,1932,5,AD,ART DIRECTION,Lazare Meerson,A Nous la Liberte,FALSE,,,7
-1931,1932,5,AD,ART DIRECTION,Richard Day,Arrowsmith,FALSE,,,8
-1931,1932,5,AD,ART DIRECTION,Gordon Wiles,Transatlantic,TRUE,,,9
-1931,1932,5,C,CINEMATOGRAPHY,Ray June,Arrowsmith,FALSE,,,10
-1931,1932,5,C,CINEMATOGRAPHY,Karl Struss,Dr. Jekyll and Mr. Hyde,FALSE,,,11
-1931,1932,5,C,CINEMATOGRAPHY,Lee Garmes,Shanghai Express,TRUE,,,12
-1931,1932,5,D,DIRECTING,Frank Borzage,Bad Girl,TRUE,,,13
-1931,1932,5,D,DIRECTING,King Vidor,The Champ,FALSE,,,14
-1931,1932,5,D,DIRECTING,Josef Von Sternberg,Shanghai Express,FALSE,,,15
-1931,1932,5,OPT,OUTSTANDING PRODUCTION,Samuel Goldwyn Productions,Arrowsmith,FALSE,,,16
-1931,1932,5,OPT,OUTSTANDING PRODUCTION,Fox,Bad Girl,FALSE,,,17
-1931,1932,5,OPT,OUTSTANDING PRODUCTION,Metro-Goldwyn-Mayer,The Champ,FALSE,,,18
-1931,1932,5,OPT,OUTSTANDING PRODUCTION,First National,Five Star Final,FALSE,,,19
-1931,1932,5,OPT,OUTSTANDING PRODUCTION,Metro-Goldwyn-Mayer,Grand Hotel,TRUE,,,20
-1931,1932,5,OPT,OUTSTANDING PRODUCTION,Paramount Publix,One Hour with You,FALSE,,,21
-1931,1932,5,OPT,OUTSTANDING PRODUCTION,Paramount Publix,Shanghai Express,FALSE,,,22
-1931,1932,5,OPT,OUTSTANDING PRODUCTION,Paramount Publix,The Smiling Lieutenant,FALSE,,,23
-1931,1932,5,SSCT,SHORT SUBJECT (Cartoon),"Walt Disney, Producer",Flowers and Trees,TRUE,,,24
-1931,1932,5,SSCT,SHORT SUBJECT (Cartoon),"Leon Schlesinger, Producer",It's Got Me Again,FALSE,,,25
-1931,1932,5,SSCT,SHORT SUBJECT (Cartoon),"Walt Disney, Producer",Mickey's Orphans,FALSE,,,26
-1931,1932,5,SSCM,SHORT SUBJECT (Comedy),"Mack Sennett, Producer",The Loud Mouth,FALSE,,,27
-1931,1932,5,SSCM,SHORT SUBJECT (Comedy),"Hal Roach, Producer",The Music Box,TRUE,,,28
-1931,1932,5,SSCM,SHORT SUBJECT (Comedy),RKO Radio,Scratch-As-Catch-Can,FALSE,,,29
-1931,1932,5,SSCM,SHORT SUBJECT (Comedy),RKO Radio,Stout Hearts and Willing Hands,FALSE,,,30
-1931,1932,5,SSN,SHORT SUBJECT (Novelty),Paramount Publix,Screen Souvenirs,FALSE,,,31
-1931,1932,5,SSN,SHORT SUBJECT (Novelty),Metro-Goldwyn-Mayer,Swing High,FALSE,,,32
-1931,1932,5,SSN,SHORT SUBJECT (Novelty),"Mack Sennett, Producer",Wrestling Swordfish,TRUE,,,33
-1931,1932,5,SR,SOUND RECORDING,Metro-Goldwyn-Mayer Studio Sound Department,,FALSE,,,34
-1931,1932,5,SR,SOUND RECORDING,Paramount Publix Studio Sound Department,,TRUE,,,35
-1931,1932,5,SR,SOUND RECORDING,RKO Radio Studio Sound Department,,FALSE,,,36
-1931,1932,5,SR,SOUND RECORDING,Warner Bros.-First National Studio Sound Department,,FALSE,,,37
-1931,1932,5,WA,WRITING (Adaptation),Sidney Howard,Arrowsmith,FALSE,,,38
-1931,1932,5,WA,WRITING (Adaptation),Edwin Burke,Bad Girl,TRUE,,,39
-1931,1932,5,WA,WRITING (Adaptation),"Percy Heath, Samuel Hoffenstein",Dr. Jekyll and Mr. Hyde,FALSE,,,40
-1931,1932,5,WOS,WRITING (Original Story),Frances Marion,The Champ,TRUE,,,41
-1931,1932,5,WOS,WRITING (Original Story),"Grover Jones, William Slavens McNutt",Lady and Gent,FALSE,,,42
-1931,1932,5,WOS,WRITING (Original Story),Lucien Hubbard,The Star Witness,FALSE,,,43
-1931,1932,5,WOS,WRITING (Original Story),"Adela Rogers St. Johns, Jane Murfin",What Price Hollywood?,FALSE,,,44
-1932,1933,6,AR,ACTOR,Leslie Howard,Berkeley Square,FALSE,,,1
-1932,1933,6,AR,ACTOR,Charles Laughton,The Private Life of Henry VIII,TRUE,,,2
-1932,1933,6,AR,ACTOR,Paul Muni,I Am a Fugitive from a Chain Gang,FALSE,,,3
-1932,1933,6,AS,ACTRESS,Katharine Hepburn,Morning Glory,TRUE,,,4
-1932,1933,6,AS,ACTRESS,May Robson,Lady for a Day,FALSE,,,5
-1932,1933,6,AS,ACTRESS,Diana Wynyard,Cavalcade,FALSE,,,6
-1932,1933,6,AD,ART DIRECTION,William S. Darling,Cavalcade,TRUE,,,7
-1932,1933,6,AD,ART DIRECTION,"Hans Dreier, Roland Anderson",A Farewell to Arms,FALSE,,,8
-1932,1933,6,AD,ART DIRECTION,Cedric Gibbons,When Ladies Meet,FALSE,,,9
-1932,1933,6,ASD,ASSISTANT DIRECTOR,Percy Ikerd (Fox),,FALSE,,,10
-1932,1933,6,ASD,ASSISTANT DIRECTOR,William Tummel (Fox),,TRUE,,,11
-1932,1933,6,ASD,ASSISTANT DIRECTOR,Charles Dorian (Metro-Goldwyn-Mayer),,TRUE,,,12
-1932,1933,6,ASD,ASSISTANT DIRECTOR,Bunny Dull (Metro-Goldwyn-Mayer),,FALSE,,,13
-1932,1933,6,ASD,ASSISTANT DIRECTOR,John S. Waters (Metro-Goldwyn-Mayer),,FALSE,,,14
-1932,1933,6,ASD,ASSISTANT DIRECTOR,Charles Barton (Paramount),,TRUE,,,15
-1932,1933,6,ASD,ASSISTANT DIRECTOR,Sidney S. Brod (Paramount),,FALSE,,,16
-1932,1933,6,ASD,ASSISTANT DIRECTOR,Arthur Jacobson (Paramount),,FALSE,,,17
-1932,1933,6,ASD,ASSISTANT DIRECTOR,Eddie Killey (RKO Radio),,FALSE,,,18
-1932,1933,6,ASD,ASSISTANT DIRECTOR,Dewey Starkey (RKO Radio),,TRUE,,,19
-1932,1933,6,ASD,ASSISTANT DIRECTOR,Fred Fox (United Artists),,TRUE,,,20
-1932,1933,6,ASD,ASSISTANT DIRECTOR,Benjamin Silvey (United Artists),,FALSE,,,21
-1932,1933,6,ASD,ASSISTANT DIRECTOR,Scott Beal (Universal),,TRUE,,,22
-1932,1933,6,ASD,ASSISTANT DIRECTOR,Joe McDonough (Universal),,FALSE,,,23
-1932,1933,6,ASD,ASSISTANT DIRECTOR,W. J. Reiter (Universal),,FALSE,,,24
-1932,1933,6,ASD,ASSISTANT DIRECTOR,Al Alborn (Warner Bros.),,FALSE,,,25
-1932,1933,6,ASD,ASSISTANT DIRECTOR,Gordon Hollingshead (Warner Bros.),,TRUE,,,26
-1932,1933,6,ASD,ASSISTANT DIRECTOR,Frank X. Shaw (Warner Bros.),,FALSE,,,27
-1932,1933,6,C,CINEMATOGRAPHY,"Charles Bryant Lang, Jr.",A Farewell to Arms,TRUE,,,28
-1932,1933,6,C,CINEMATOGRAPHY,George J. Folsey,Reunion in Vienna,FALSE,,,29
-1932,1933,6,C,CINEMATOGRAPHY,Karl Struss,The Sign of the Cross,FALSE,,,30
-1932,1933,6,D,DIRECTING,Frank Lloyd,Cavalcade,TRUE,,,31
-1932,1933,6,D,DIRECTING,Frank Capra,Lady for a Day,FALSE,,,32
-1932,1933,6,D,DIRECTING,George Cukor,Little Women,FALSE,,,33
-1932,1933,6,OPT,OUTSTANDING PRODUCTION,Fox,Cavalcade,TRUE,,,34
-1932,1933,6,OPT,OUTSTANDING PRODUCTION,Paramount,A Farewell to Arms,FALSE,,,35
-1932,1933,6,OPT,OUTSTANDING PRODUCTION,Warner Bros.,42nd Street,FALSE,,,36
-1932,1933,6,OPT,OUTSTANDING PRODUCTION,Warner Bros.,I Am a Fugitive from a Chain Gang,FALSE,,,37
-1932,1933,6,OPT,OUTSTANDING PRODUCTION,Columbia,Lady for a Day,FALSE,,,38
-1932,1933,6,OPT,OUTSTANDING PRODUCTION,RKO Radio,Little Women,FALSE,,,39
-1932,1933,6,OPT,OUTSTANDING PRODUCTION,London Films,The Private Life of Henry VIII,FALSE,,,40
-1932,1933,6,OPT,OUTSTANDING PRODUCTION,Paramount,She Done Him Wrong,FALSE,,,41
-1932,1933,6,OPT,OUTSTANDING PRODUCTION,Metro-Goldwyn-Mayer,Smilin' Through,FALSE,,,42
-1932,1933,6,OPT,OUTSTANDING PRODUCTION,Fox,State Fair,FALSE,,,43
-1932,1933,6,SSCT,SHORT SUBJECT (Cartoon),"Walt Disney, Producer",Building a Building,FALSE,,,44
-1932,1933,6,SSCT,SHORT SUBJECT (Cartoon),"Walter Lantz, Producer",The Merry Old Soul,FALSE,,,45
-1932,1933,6,SSCT,SHORT SUBJECT (Cartoon),"Walt Disney, Producer",The Three Little Pigs,TRUE,,,46
-1932,1933,6,SSCM,SHORT SUBJECT (Comedy),"Warren Doane, Producer",Mister Mugg,FALSE,,,47
-1932,1933,6,SSCM,SHORT SUBJECT (Comedy),"Louis Brock, Producer",A Preferred List,FALSE,,,48
-1932,1933,6,SSCM,SHORT SUBJECT (Comedy),"Louis Brock, Producer",So This Is Harris,TRUE,,,49
-1932,1933,6,SSN,SHORT SUBJECT (Novelty),"Joe Rock, Producer",Krakatoa,TRUE,,,50
-1932,1933,6,SSN,SHORT SUBJECT (Novelty),"Pete Smith, Producer",Menu,FALSE,,,51
-1932,1933,6,SSN,SHORT SUBJECT (Novelty),Educational,The Sea,FALSE,,,52
-1932,1933,6,SR,SOUND RECORDING,"Paramount Studio Sound Department, Franklin B. Hansen, Sound Director",A Farewell to Arms,TRUE,,,53
-1932,1933,6,SR,SOUND RECORDING,"Warner Bros. Studio Sound Department, Nathan Levinson, Sound Director",42nd Street,FALSE,,,54
-1932,1933,6,SR,SOUND RECORDING,"Warner Bros. Studio Sound Department, Nathan Levinson, Sound Director",Gold Diggers of 1933,FALSE,,,55
-1932,1933,6,SR,SOUND RECORDING,"Warner Bros. Studio Sound Department, Nathan Levinson, Sound Director",I Am a Fugitive from a Chain Gang,FALSE,,,56
-1932,1933,6,WA,WRITING (Adaptation),Robert Riskin,Lady for a Day,FALSE,,,57
-1932,1933,6,WA,WRITING (Adaptation),"Victor Heerman, Sarah Y. Mason",Little Women,TRUE,,,58
-1932,1933,6,WA,WRITING (Adaptation),"Paul Green, Sonya Levien",State Fair,FALSE,,,59
-1932,1933,6,WOS,WRITING (Original Story),Robert Lord,One Way Passage,TRUE,,,60
-1932,1933,6,WOS,WRITING (Original Story),Frances Marion,The Prizefighter and the Lady,FALSE,,,61
-1932,1933,6,WOS,WRITING (Original Story),Charles MacArthur,Rasputin and the Empress,FALSE,,,62
+1928,1929,1,AR,ACTOR,Richard Barthelmess,The Noose,FALSE,,,1
+1928,1929,1,AR,ACTOR,Emil Jannings,The Last Command,TRUE,,,2
+1928,1929,1,AS,ACTRESS,Louise Dresser,A Ship Comes In,FALSE,,,3
+1928,1929,1,AS,ACTRESS,Janet Gaynor,7th Heaven,TRUE,,,4
+1928,1929,1,AS,ACTRESS,Gloria Swanson,Sadie Thompson,FALSE,,,5
+1928,1929,1,AD,ART DIRECTION,Rochus Gliese,Sunrise,FALSE,,,6
+1928,1929,1,AD,ART DIRECTION,William Cameron Menzies,The Dove,TRUE,,,7
+1928,1929,1,AD,ART DIRECTION,Harry Oliver,7th Heaven,FALSE,,,8
+1928,1929,1,C,CINEMATOGRAPHY,George Barnes,The Devil Dancer,FALSE,,,9
+1928,1929,1,C,CINEMATOGRAPHY,Charles Rosher,Sunrise,TRUE,,,10
+1928,1929,1,C,CINEMATOGRAPHY,Karl Struss,Sunrise,TRUE,,,11
+1928,1929,1,DCP,DIRECTING (Comedy Picture),Lewis Milestone,Two Arabian Knights,TRUE,,,12
+1928,1929,1,DCP,DIRECTING (Comedy Picture),Ted Wilde,Speedy,FALSE,,,13
+1928,1929,1,DDP,DIRECTING (Dramatic Picture),Frank Borzage,7th Heaven,TRUE,,,14
+1928,1929,1,DDP,DIRECTING (Dramatic Picture),Herbert Brenon,Sorrell and Son,FALSE,,,15
+1928,1929,1,DDP,DIRECTING (Dramatic Picture),King Vidor,The Crowd,FALSE,,,16
+1928,1929,1,EE,ENGINEERING EFFECTS,Ralph Hammeras,,FALSE,,,17
+1928,1929,1,EE,ENGINEERING EFFECTS,Roy Pomeroy,Wings,TRUE,,,18
+1928,1929,1,EE,ENGINEERING EFFECTS,Nugent Slaughter,,FALSE,,,19
+1928,1929,1,OP,OUTSTANDING PICTURE,The Caddo Company,The Racket,FALSE,,,20
+1928,1929,1,OP,OUTSTANDING PICTURE,Fox,7th Heaven,FALSE,,,21
+1928,1929,1,OP,OUTSTANDING PICTURE,Paramount Famous Lasky,Wings,TRUE,,,22
+1928,1929,1,UAP,UNIQUE AND ARTISTIC PICTURE,Fox,Sunrise,TRUE,,,23
+1928,1929,1,UAP,UNIQUE AND ARTISTIC PICTURE,Metro-Goldwyn-Mayer,The Crowd,FALSE,,,24
+1928,1929,1,UAP,UNIQUE AND ARTISTIC PICTURE,Paramount Famous Lasky,Chang,FALSE,,,25
+1928,1929,1,WA,WRITING (Adaptation),Alfred Cohn,The Jazz Singer,FALSE,,,26
+1928,1929,1,WA,WRITING (Adaptation),Anthony Coldeway,Glorious Betsy,FALSE,,,27
+1928,1929,1,WA,WRITING (Adaptation),Benjamin Glazer,7th Heaven,TRUE,,,28
+1928,1929,1,WOS,WRITING (Original Story),Lajos Biro,The Last Command,FALSE,,,29
+1928,1929,1,WOS,WRITING (Original Story),Ben Hecht,Underworld,TRUE,,,30
+1928,1929,1,WTW,WRITING (Title Writing),Gerald Duffy,The Private Life of Helen of Troy,FALSE,,,31
+1928,1929,1,WTW,WRITING (Title Writing),Joseph Farnham,,TRUE,,,32
+1928,1929,1,WTW,WRITING (Title Writing),"George Marion, Jr.",,FALSE,,,33
+1929,1930,2,AR,ACTOR,George Bancroft,Thunderbolt,FALSE,,,1
+1929,1930,2,AR,ACTOR,Warner Baxter,In Old Arizona,TRUE,,,2
+1929,1930,2,AR,ACTOR,Chester Morris,Alibi,FALSE,,,3
+1929,1930,2,AR,ACTOR,Paul Muni,The Valiant,FALSE,,,4
+1929,1930,2,AR,ACTOR,Lewis Stone,The Patriot,FALSE,,,5
+1929,1930,2,AS,ACTRESS,Ruth Chatterton,Madame X,FALSE,,,6
+1929,1930,2,AS,ACTRESS,Betty Compson,The Barker,FALSE,,,7
+1929,1930,2,AS,ACTRESS,Jeanne Eagels,The Letter,FALSE,,,8
+1929,1930,2,AS,ACTRESS,Corinne Griffith,The Divine Lady,FALSE,,,9
+1929,1930,2,AS,ACTRESS,Bessie Love,The Broadway Melody,FALSE,,,10
+1929,1930,2,AS,ACTRESS,Mary Pickford,Coquette,TRUE,,,11
+1929,1930,2,AD,ART DIRECTION,Hans Dreier,The Patriot,FALSE,,,12
+1929,1930,2,AD,ART DIRECTION,Cedric Gibbons,The Bridge of San Luis Rey,TRUE,,,13
+1929,1930,2,AD,ART DIRECTION,Mitchell Leisen,Dynamite,FALSE,,,14
+1929,1930,2,AD,ART DIRECTION,William Cameron Menzies,Alibi,FALSE,,,15
+1929,1930,2,AD,ART DIRECTION,Harry Oliver,Street Angel,FALSE,,,16
+1929,1930,2,C,CINEMATOGRAPHY,George Barnes,Our Dancing Daughters,FALSE,,,17
+1929,1930,2,C,CINEMATOGRAPHY,Clyde De Vinna,White Shadows in the South Seas,TRUE,,,18
+1929,1930,2,C,CINEMATOGRAPHY,Arthur Edeson,In Old Arizona,FALSE,,,19
+1929,1930,2,C,CINEMATOGRAPHY,Ernest Palmer,Four Devils,FALSE,,,20
+1929,1930,2,C,CINEMATOGRAPHY,John Seitz,The Divine Lady,FALSE,,,21
+1929,1930,2,D,DIRECTING,Lionel Barrymore,Madame X,FALSE,,,22
+1929,1930,2,D,DIRECTING,Harry Beaumont,The Broadway Melody,FALSE,,,23
+1929,1930,2,D,DIRECTING,Irving Cummings,In Old Arizona,FALSE,,,24
+1929,1930,2,D,DIRECTING,Frank Lloyd,The Divine Lady,TRUE,,,25
+1929,1930,2,D,DIRECTING,Frank Lloyd,Drag,FALSE,,,26
+1929,1930,2,D,DIRECTING,Ernst Lubitsch,The Patriot,FALSE,,,27
+1929,1930,2,OP,OUTSTANDING PICTURE,Feature Productions,Alibi,FALSE,,,28
+1929,1930,2,OP,OUTSTANDING PICTURE,Fox,In Old Arizona,FALSE,,,29
+1929,1930,2,OP,OUTSTANDING PICTURE,Metro-Goldwyn-Mayer,The Broadway Melody,TRUE,,,30
+1929,1930,2,OP,OUTSTANDING PICTURE,Metro-Goldwyn-Mayer,Hollywood Revue,FALSE,,,31
+1929,1930,2,OP,OUTSTANDING PICTURE,Paramount Famous Lasky,The Patriot,FALSE,,,32
+1929,1930,2,W,WRITING,Tom Barry,In Old Arizona,FALSE,,,33
+1929,1930,2,W,WRITING,Elliott Clawson,The Cop,FALSE,,,34
+1929,1930,2,W,WRITING,Hans Kraly,The Last of Mrs. Cheyney,FALSE,,,35
+1929,1930,2,W,WRITING,Hans Kraly,The Patriot,TRUE,,,36
+1929,1930,2,W,WRITING,Josephine Lovett,Our Dancing Daughters,FALSE,,,37
+1929,1930,2,W,WRITING,Bess Meredyth,A Woman of Affairs,FALSE,,,38
+1930,1931,3,AR,ACTOR,George Arliss,Disraeli,TRUE,,,1
+1930,1931,3,AR,ACTOR,George Arliss,The Green Goddess,FALSE,,,2
+1930,1931,3,AR,ACTOR,Wallace Beery,The Big House,FALSE,,,3
+1930,1931,3,AR,ACTOR,Maurice Chevalier,The Big Pond,FALSE,,,4
+1930,1931,3,AR,ACTOR,Ronald Colman,Bulldog Drummond,FALSE,,,5
+1930,1931,3,AR,ACTOR,Lawrence Tibbett,The Rogue Song,FALSE,,,6
+1930,1931,3,AS,ACTRESS,Nancy Carroll,The Devil's Holiday,FALSE,,,7
+1930,1931,3,AS,ACTRESS,Ruth Chatterton,Sarah and Son,FALSE,,,8
+1930,1931,3,AS,ACTRESS,Greta Garbo,Anna Christie,FALSE,,,9
+1930,1931,3,AS,ACTRESS,Norma Shearer,The Divorcee,TRUE,,,10
+1930,1931,3,AS,ACTRESS,Norma Shearer,Their Own Desire,FALSE,,,11
+1930,1931,3,AS,ACTRESS,Gloria Swanson,The Trespasser,FALSE,,,12
+1930,1931,3,AD,ART DIRECTION,(William Cameron Menzies),Bulldog Drummond,FALSE,,,13
+1930,1931,3,AD,ART DIRECTION,Herman Rosse,King of Jazz,TRUE,,,14
+1930,1931,3,AD,ART DIRECTION,(Hans Dreier),The Love Parade,FALSE,,,15
+1930,1931,3,AD,ART DIRECTION,(Jack Okey),Sally,FALSE,,,16
+1930,1931,3,AD,ART DIRECTION,(Hans Dreier),The Vagabond King,FALSE,,,17
+1930,1931,3,C,CINEMATOGRAPHY,(Arthur Edeson),All Quiet on the Western Front,FALSE,,,18
+1930,1931,3,C,CINEMATOGRAPHY,(William Daniels),Anna Christie,FALSE,,,19
+1930,1931,3,C,CINEMATOGRAPHY,"(Gaetano Gaudio), (Harry Perry)",Hell's Angels,FALSE,,,20
+1930,1931,3,C,CINEMATOGRAPHY,(Victor Milner),The Love Parade,FALSE,,,21
+1930,1931,3,C,CINEMATOGRAPHY,"Joseph T. Rucker, Willard Van Der Veer",With Byrd at the South Pole,TRUE,,,22
+1930,1931,3,D,DIRECTING,Clarence Brown,Anna Christie,FALSE,,,23
+1930,1931,3,D,DIRECTING,Robert Leonard,The Divorcee,FALSE,,,24
+1930,1931,3,D,DIRECTING,Ernst Lubitsch,The Love Parade,FALSE,,,25
+1930,1931,3,D,DIRECTING,Lewis Milestone,All Quiet on the Western Front,TRUE,,,26
+1930,1931,3,D,DIRECTING,King Vidor,Hallelujah,FALSE,,,27
+1930,1931,3,OPT,OUTSTANDING PRODUCTION,Universal,All Quiet on the Western Front,TRUE,,,28
+1930,1931,3,OPT,OUTSTANDING PRODUCTION,Cosmopolitan,The Big House,FALSE,,,29
+1930,1931,3,OPT,OUTSTANDING PRODUCTION,Warner Bros.,Disraeli,FALSE,,,30
+1930,1931,3,OPT,OUTSTANDING PRODUCTION,Metro-Goldwyn-Mayer,The Divorcee,FALSE,,,31
+1930,1931,3,OPT,OUTSTANDING PRODUCTION,Paramount Famous Lasky,The Love Parade,FALSE,,,32
+1930,1931,3,SR,SOUND RECORDING,"Metro-Goldwyn-Mayer Studio Sound Department, Douglas Shearer, Sound Director",The Big House,TRUE,,,33
+1930,1931,3,SR,SOUND RECORDING,"(RKO Radio Studio Sound Department, John Tribby, Sound Director)",The Case of Sergeant Grischa,FALSE,,,34
+1930,1931,3,SR,SOUND RECORDING,"(Paramount Famous Lasky Studio Sound Department, Franklin Hansen, Sound Director)",The Love Parade,FALSE,,,35
+1930,1931,3,SR,SOUND RECORDING,"(United Artists Studio Sound Department, Oscar Lagerstrom, Sound Director)",Raffles,FALSE,,,36
+1930,1931,3,SR,SOUND RECORDING,"(First National Studio Sound Department, George Groves, Sound Director)",Song of the Flame,FALSE,,,37
+1930,1931,3,W,WRITING,"(George Abbott), (Maxwell Anderson), (Del Andrews)",All Quiet on the Western Front,FALSE,,,38
+1930,1931,3,W,WRITING,Frances Marion,The Big House,TRUE,,,39
+1930,1931,3,W,WRITING,(Julian Josephson),Disraeli,FALSE,,,40
+1930,1931,3,W,WRITING,(John Meehan),The Divorcee,FALSE,,,41
+1930,1931,3,W,WRITING,(Howard Estabrook),Street of Chance,FALSE,,,42
+1931,1932,4,AR,ACTOR,Lionel Barrymore,A Free Soul,TRUE,,,1
+1931,1932,4,AR,ACTOR,Jackie Cooper,Skippy,FALSE,,,2
+1931,1932,4,AR,ACTOR,Richard Dix,Cimarron,FALSE,,,3
+1931,1932,4,AR,ACTOR,Fredric March,The Royal Family of Broadway,FALSE,,,4
+1931,1932,4,AR,ACTOR,Adolphe Menjou,The Front Page,FALSE,,,5
+1931,1932,4,AS,ACTRESS,Marlene Dietrich,Morocco,FALSE,,,6
+1931,1932,4,AS,ACTRESS,Marie Dressler,Min and Bill,TRUE,,,7
+1931,1932,4,AS,ACTRESS,Irene Dunne,Cimarron,FALSE,,,8
+1931,1932,4,AS,ACTRESS,Ann Harding,Holiday,FALSE,,,9
+1931,1932,4,AS,ACTRESS,Norma Shearer,A Free Soul,FALSE,,,10
+1931,1932,4,AD,ART DIRECTION,Max Rée,Cimarron,TRUE,,,11
+1931,1932,4,AD,ART DIRECTION,"Stephen Goosson, Ralph Hammeras",Just Imagine,FALSE,,,12
+1931,1932,4,AD,ART DIRECTION,Hans Dreier,Morocco,FALSE,,,13
+1931,1932,4,AD,ART DIRECTION,Anton Grot,Svengali,FALSE,,,14
+1931,1932,4,AD,ART DIRECTION,Richard Day,Whoopee!,FALSE,,,15
+1931,1932,4,C,CINEMATOGRAPHY,Edward Cronjager,Cimarron,FALSE,,,16
+1931,1932,4,C,CINEMATOGRAPHY,Lee Garmes,Morocco,FALSE,,,17
+1931,1932,4,C,CINEMATOGRAPHY,Charles Lang,The Right to Love,FALSE,,,18
+1931,1932,4,C,CINEMATOGRAPHY,"Barney ""Chick"" McGill",Svengali,FALSE,,,19
+1931,1932,4,C,CINEMATOGRAPHY,Floyd Crosby,Tabu,TRUE,,,20
+1931,1932,4,D,DIRECTING,Wesley Ruggles,Cimarron,FALSE,,,21
+1931,1932,4,D,DIRECTING,Clarence Brown,A Free Soul,FALSE,,,22
+1931,1932,4,D,DIRECTING,Lewis Milestone,The Front Page,FALSE,,,23
+1931,1932,4,D,DIRECTING,Josef Von Sternberg,Morocco,FALSE,,,24
+1931,1932,4,D,DIRECTING,Norman Taurog,Skippy,TRUE,,,25
+1931,1932,4,OPT,OUTSTANDING PRODUCTION,RKO Radio,Cimarron,TRUE,,,26
+1931,1932,4,OPT,OUTSTANDING PRODUCTION,Fox,East Lynne,FALSE,,,27
+1931,1932,4,OPT,OUTSTANDING PRODUCTION,The Caddo Company,The Front Page,FALSE,,,28
+1931,1932,4,OPT,OUTSTANDING PRODUCTION,Paramount Publix,Skippy,FALSE,,,29
+1931,1932,4,OPT,OUTSTANDING PRODUCTION,Metro-Goldwyn-Mayer,Trader Horn,FALSE,,,30
+1931,1932,4,SR,SOUND RECORDING,Samuel Goldwyn - United Artists Studio Sound Department,,FALSE,,,31
+1931,1932,4,SR,SOUND RECORDING,Metro-Goldwyn-Mayer Studio Sound Department,,FALSE,,,32
+1931,1932,4,SR,SOUND RECORDING,Paramount Publix Studio Sound Department,,TRUE,,,33
+1931,1932,4,SR,SOUND RECORDING,RKO Radio Studio Sound Department,,FALSE,,,34
+1931,1932,4,WA,WRITING (Adaptation),Howard Estabrook,Cimarron,TRUE,,,35
+1931,1932,4,WA,WRITING (Adaptation),"Seton I. Miller, Fred Niblo, Jr.",The Criminal Code,FALSE,,,36
+1931,1932,4,WA,WRITING (Adaptation),Horace Jackson,Holiday,FALSE,,,37
+1931,1932,4,WA,WRITING (Adaptation),"Francis Faragoh, Robert N. Lee",Little Caesar,FALSE,,,38
+1931,1932,4,WA,WRITING (Adaptation),"Joseph L. Mankiewicz, Sam Mintz",Skippy,FALSE,,,39
+1931,1932,4,WOS,WRITING (Original Story),John Monk Saunders,The Dawn Patrol,TRUE,,,40
+1931,1932,4,WOS,WRITING (Original Story),Rowland Brown,The Doorway to Hell,FALSE,,,41
+1931,1932,4,WOS,WRITING (Original Story),"Harry d'Abbadie d'Arrast, Douglas Doty, Donald Ogden Stewart",Laughter,FALSE,,,42
+1931,1932,4,WOS,WRITING (Original Story),"John Bright, Kubec Glasmon",The Public Enemy,FALSE,,,43
+1931,1932,4,WOS,WRITING (Original Story),"Lucien Hubbard, Joseph Jackson",Smart Money,FALSE,,,44
+1932,1933,5,AR,ACTOR,Wallace Beery,The Champ,TRUE,,,1
+1932,1933,5,AR,ACTOR,Alfred Lunt,The Guardsman,FALSE,,,2
+1932,1933,5,AR,ACTOR,Fredric March,Dr. Jekyll and Mr. Hyde,TRUE,,,3
+1932,1933,5,AS,ACTRESS,Marie Dressler,Emma,FALSE,,,4
+1932,1933,5,AS,ACTRESS,Lynn Fontanne,The Guardsman,FALSE,,,5
+1932,1933,5,AS,ACTRESS,Helen Hayes,The Sin of Madelon Claudet,TRUE,,,6
+1932,1933,5,AD,ART DIRECTION,Lazare Meerson,A Nous la Liberte,FALSE,,,7
+1932,1933,5,AD,ART DIRECTION,Richard Day,Arrowsmith,FALSE,,,8
+1932,1933,5,AD,ART DIRECTION,Gordon Wiles,Transatlantic,TRUE,,,9
+1932,1933,5,C,CINEMATOGRAPHY,Ray June,Arrowsmith,FALSE,,,10
+1932,1933,5,C,CINEMATOGRAPHY,Karl Struss,Dr. Jekyll and Mr. Hyde,FALSE,,,11
+1932,1933,5,C,CINEMATOGRAPHY,Lee Garmes,Shanghai Express,TRUE,,,12
+1932,1933,5,D,DIRECTING,Frank Borzage,Bad Girl,TRUE,,,13
+1932,1933,5,D,DIRECTING,King Vidor,The Champ,FALSE,,,14
+1932,1933,5,D,DIRECTING,Josef Von Sternberg,Shanghai Express,FALSE,,,15
+1932,1933,5,OPT,OUTSTANDING PRODUCTION,Samuel Goldwyn Productions,Arrowsmith,FALSE,,,16
+1932,1933,5,OPT,OUTSTANDING PRODUCTION,Fox,Bad Girl,FALSE,,,17
+1932,1933,5,OPT,OUTSTANDING PRODUCTION,Metro-Goldwyn-Mayer,The Champ,FALSE,,,18
+1932,1933,5,OPT,OUTSTANDING PRODUCTION,First National,Five Star Final,FALSE,,,19
+1932,1933,5,OPT,OUTSTANDING PRODUCTION,Metro-Goldwyn-Mayer,Grand Hotel,TRUE,,,20
+1932,1933,5,OPT,OUTSTANDING PRODUCTION,Paramount Publix,One Hour with You,FALSE,,,21
+1932,1933,5,OPT,OUTSTANDING PRODUCTION,Paramount Publix,Shanghai Express,FALSE,,,22
+1932,1933,5,OPT,OUTSTANDING PRODUCTION,Paramount Publix,The Smiling Lieutenant,FALSE,,,23
+1932,1933,5,SSCT,SHORT SUBJECT (Cartoon),"Walt Disney, Producer",Flowers and Trees,TRUE,,,24
+1932,1933,5,SSCT,SHORT SUBJECT (Cartoon),"Leon Schlesinger, Producer",It's Got Me Again,FALSE,,,25
+1932,1933,5,SSCT,SHORT SUBJECT (Cartoon),"Walt Disney, Producer",Mickey's Orphans,FALSE,,,26
+1932,1933,5,SSCM,SHORT SUBJECT (Comedy),"Mack Sennett, Producer",The Loud Mouth,FALSE,,,27
+1932,1933,5,SSCM,SHORT SUBJECT (Comedy),"Hal Roach, Producer",The Music Box,TRUE,,,28
+1932,1933,5,SSCM,SHORT SUBJECT (Comedy),RKO Radio,Scratch-As-Catch-Can,FALSE,,,29
+1932,1933,5,SSCM,SHORT SUBJECT (Comedy),RKO Radio,Stout Hearts and Willing Hands,FALSE,,,30
+1932,1933,5,SSN,SHORT SUBJECT (Novelty),Paramount Publix,Screen Souvenirs,FALSE,,,31
+1932,1933,5,SSN,SHORT SUBJECT (Novelty),Metro-Goldwyn-Mayer,Swing High,FALSE,,,32
+1932,1933,5,SSN,SHORT SUBJECT (Novelty),"Mack Sennett, Producer",Wrestling Swordfish,TRUE,,,33
+1932,1933,5,SR,SOUND RECORDING,Metro-Goldwyn-Mayer Studio Sound Department,,FALSE,,,34
+1932,1933,5,SR,SOUND RECORDING,Paramount Publix Studio Sound Department,,TRUE,,,35
+1932,1933,5,SR,SOUND RECORDING,RKO Radio Studio Sound Department,,FALSE,,,36
+1932,1933,5,SR,SOUND RECORDING,Warner Bros.-First National Studio Sound Department,,FALSE,,,37
+1932,1933,5,WA,WRITING (Adaptation),Sidney Howard,Arrowsmith,FALSE,,,38
+1932,1933,5,WA,WRITING (Adaptation),Edwin Burke,Bad Girl,TRUE,,,39
+1932,1933,5,WA,WRITING (Adaptation),"Percy Heath, Samuel Hoffenstein",Dr. Jekyll and Mr. Hyde,FALSE,,,40
+1932,1933,5,WOS,WRITING (Original Story),Frances Marion,The Champ,TRUE,,,41
+1932,1933,5,WOS,WRITING (Original Story),"Grover Jones, William Slavens McNutt",Lady and Gent,FALSE,,,42
+1932,1933,5,WOS,WRITING (Original Story),Lucien Hubbard,The Star Witness,FALSE,,,43
+1932,1933,5,WOS,WRITING (Original Story),"Adela Rogers St. Johns, Jane Murfin",What Price Hollywood?,FALSE,,,44
+1933,1934,6,AR,ACTOR,Leslie Howard,Berkeley Square,FALSE,,,1
+1933,1934,6,AR,ACTOR,Charles Laughton,The Private Life of Henry VIII,TRUE,,,2
+1933,1934,6,AR,ACTOR,Paul Muni,I Am a Fugitive from a Chain Gang,FALSE,,,3
+1933,1934,6,AS,ACTRESS,Katharine Hepburn,Morning Glory,TRUE,,,4
+1933,1934,6,AS,ACTRESS,May Robson,Lady for a Day,FALSE,,,5
+1933,1934,6,AS,ACTRESS,Diana Wynyard,Cavalcade,FALSE,,,6
+1933,1934,6,AD,ART DIRECTION,William S. Darling,Cavalcade,TRUE,,,7
+1933,1934,6,AD,ART DIRECTION,"Hans Dreier, Roland Anderson",A Farewell to Arms,FALSE,,,8
+1933,1934,6,AD,ART DIRECTION,Cedric Gibbons,When Ladies Meet,FALSE,,,9
+1933,1934,6,ASD,ASSISTANT DIRECTOR,Percy Ikerd (Fox),,FALSE,,,10
+1933,1934,6,ASD,ASSISTANT DIRECTOR,William Tummel (Fox),,TRUE,,,11
+1933,1934,6,ASD,ASSISTANT DIRECTOR,Charles Dorian (Metro-Goldwyn-Mayer),,TRUE,,,12
+1933,1934,6,ASD,ASSISTANT DIRECTOR,Bunny Dull (Metro-Goldwyn-Mayer),,FALSE,,,13
+1933,1934,6,ASD,ASSISTANT DIRECTOR,John S. Waters (Metro-Goldwyn-Mayer),,FALSE,,,14
+1933,1934,6,ASD,ASSISTANT DIRECTOR,Charles Barton (Paramount),,TRUE,,,15
+1933,1934,6,ASD,ASSISTANT DIRECTOR,Sidney S. Brod (Paramount),,FALSE,,,16
+1933,1934,6,ASD,ASSISTANT DIRECTOR,Arthur Jacobson (Paramount),,FALSE,,,17
+1933,1934,6,ASD,ASSISTANT DIRECTOR,Eddie Killey (RKO Radio),,FALSE,,,18
+1933,1934,6,ASD,ASSISTANT DIRECTOR,Dewey Starkey (RKO Radio),,TRUE,,,19
+1933,1934,6,ASD,ASSISTANT DIRECTOR,Fred Fox (United Artists),,TRUE,,,20
+1933,1934,6,ASD,ASSISTANT DIRECTOR,Benjamin Silvey (United Artists),,FALSE,,,21
+1933,1934,6,ASD,ASSISTANT DIRECTOR,Scott Beal (Universal),,TRUE,,,22
+1933,1934,6,ASD,ASSISTANT DIRECTOR,Joe McDonough (Universal),,FALSE,,,23
+1933,1934,6,ASD,ASSISTANT DIRECTOR,W. J. Reiter (Universal),,FALSE,,,24
+1933,1934,6,ASD,ASSISTANT DIRECTOR,Al Alborn (Warner Bros.),,FALSE,,,25
+1933,1934,6,ASD,ASSISTANT DIRECTOR,Gordon Hollingshead (Warner Bros.),,TRUE,,,26
+1933,1934,6,ASD,ASSISTANT DIRECTOR,Frank X. Shaw (Warner Bros.),,FALSE,,,27
+1933,1934,6,C,CINEMATOGRAPHY,"Charles Bryant Lang, Jr.",A Farewell to Arms,TRUE,,,28
+1933,1934,6,C,CINEMATOGRAPHY,George J. Folsey,Reunion in Vienna,FALSE,,,29
+1933,1934,6,C,CINEMATOGRAPHY,Karl Struss,The Sign of the Cross,FALSE,,,30
+1933,1934,6,D,DIRECTING,Frank Lloyd,Cavalcade,TRUE,,,31
+1933,1934,6,D,DIRECTING,Frank Capra,Lady for a Day,FALSE,,,32
+1933,1934,6,D,DIRECTING,George Cukor,Little Women,FALSE,,,33
+1933,1934,6,OPT,OUTSTANDING PRODUCTION,Fox,Cavalcade,TRUE,,,34
+1933,1934,6,OPT,OUTSTANDING PRODUCTION,Paramount,A Farewell to Arms,FALSE,,,35
+1933,1934,6,OPT,OUTSTANDING PRODUCTION,Warner Bros.,42nd Street,FALSE,,,36
+1933,1934,6,OPT,OUTSTANDING PRODUCTION,Warner Bros.,I Am a Fugitive from a Chain Gang,FALSE,,,37
+1933,1934,6,OPT,OUTSTANDING PRODUCTION,Columbia,Lady for a Day,FALSE,,,38
+1933,1934,6,OPT,OUTSTANDING PRODUCTION,RKO Radio,Little Women,FALSE,,,39
+1933,1934,6,OPT,OUTSTANDING PRODUCTION,London Films,The Private Life of Henry VIII,FALSE,,,40
+1933,1934,6,OPT,OUTSTANDING PRODUCTION,Paramount,She Done Him Wrong,FALSE,,,41
+1933,1934,6,OPT,OUTSTANDING PRODUCTION,Metro-Goldwyn-Mayer,Smilin' Through,FALSE,,,42
+1933,1934,6,OPT,OUTSTANDING PRODUCTION,Fox,State Fair,FALSE,,,43
+1933,1934,6,SSCT,SHORT SUBJECT (Cartoon),"Walt Disney, Producer",Building a Building,FALSE,,,44
+1933,1934,6,SSCT,SHORT SUBJECT (Cartoon),"Walter Lantz, Producer",The Merry Old Soul,FALSE,,,45
+1933,1934,6,SSCT,SHORT SUBJECT (Cartoon),"Walt Disney, Producer",The Three Little Pigs,TRUE,,,46
+1933,1934,6,SSCM,SHORT SUBJECT (Comedy),"Warren Doane, Producer",Mister Mugg,FALSE,,,47
+1933,1934,6,SSCM,SHORT SUBJECT (Comedy),"Louis Brock, Producer",A Preferred List,FALSE,,,48
+1933,1934,6,SSCM,SHORT SUBJECT (Comedy),"Louis Brock, Producer",So This Is Harris,TRUE,,,49
+1933,1934,6,SSN,SHORT SUBJECT (Novelty),"Joe Rock, Producer",Krakatoa,TRUE,,,50
+1933,1934,6,SSN,SHORT SUBJECT (Novelty),"Pete Smith, Producer",Menu,FALSE,,,51
+1933,1934,6,SSN,SHORT SUBJECT (Novelty),Educational,The Sea,FALSE,,,52
+1933,1934,6,SR,SOUND RECORDING,"Paramount Studio Sound Department, Franklin B. Hansen, Sound Director",A Farewell to Arms,TRUE,,,53
+1933,1934,6,SR,SOUND RECORDING,"Warner Bros. Studio Sound Department, Nathan Levinson, Sound Director",42nd Street,FALSE,,,54
+1933,1934,6,SR,SOUND RECORDING,"Warner Bros. Studio Sound Department, Nathan Levinson, Sound Director",Gold Diggers of 1933,FALSE,,,55
+1933,1934,6,SR,SOUND RECORDING,"Warner Bros. Studio Sound Department, Nathan Levinson, Sound Director",I Am a Fugitive from a Chain Gang,FALSE,,,56
+1933,1934,6,WA,WRITING (Adaptation),Robert Riskin,Lady for a Day,FALSE,,,57
+1933,1934,6,WA,WRITING (Adaptation),"Victor Heerman, Sarah Y. Mason",Little Women,TRUE,,,58
+1933,1934,6,WA,WRITING (Adaptation),"Paul Green, Sonya Levien",State Fair,FALSE,,,59
+1933,1934,6,WOS,WRITING (Original Story),Robert Lord,One Way Passage,TRUE,,,60
+1933,1934,6,WOS,WRITING (Original Story),Frances Marion,The Prizefighter and the Lady,FALSE,,,61
+1933,1934,6,WOS,WRITING (Original Story),Charles MacArthur,Rasputin and the Empress,FALSE,,,62
 1934,1935,7,AR,ACTOR,Clark Gable,It Happened One Night,TRUE,,,1
 1934,1935,7,AR,ACTOR,Frank Morgan,The Affairs of Cellini,FALSE,,,2
 1934,1935,7,AR,ACTOR,William Powell,The Thin Man,FALSE,,,3
